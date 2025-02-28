@@ -16,10 +16,9 @@ function App() {
         <button onClick={() => setPage('About')}>About Us</button>
         <button onClick={() => setPage('Connect')}>Connect</button>
       </header>
-      
       {(page == 'Events') ? <Events /> :
        (page == 'About') ? <About /> :
-       (page == 'Events') ? <Connect /> :
+       (page == 'Connect') ? <Connect /> :
        <Home />}
 
 
@@ -28,7 +27,6 @@ function App() {
         <p> partners </p>
         <p>hiya</p>
         <p>SpaceX</p>
-        <
       </footer>
     </>
 

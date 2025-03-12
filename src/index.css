@@ -41,3 +41,7 @@ header {
     cursor: pointer;
 }
 
+.navButtons button:hover { 
+    text-shadow: 0.8px 0px 0px #FEB954;
+    transition-duration: 150ms;
+}

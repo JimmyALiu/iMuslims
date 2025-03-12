@@ -12,10 +12,12 @@ function App() {
   return (
     <>
       <header>
-        <button onClick={() => setPage('Home')}>Home</button>
-        <button onClick={() => setPage('Events')}>Events</button>
-        <button onClick={() => setPage('About')}>About Us</button>
-        <button onClick={() => setPage('Connect')}>Connect</button>
+        <div className='navButtons'>
+          <button onClick={() => setPage('Home')}>Home</button>
+          <button onClick={() => setPage('Events')}>Events</button>
+          <button onClick={() => setPage('About')}>About Us</button>
+          <button onClick={() => setPage('Connect')}>Let's Connect</button>
+        </div>
       </header>
       {(page == 'Events') ? <Events /> :
        (page == 'About') ? <About /> :

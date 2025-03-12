@@ -1,6 +1,6 @@
 import './index.css';
-import imuslimsLogo from '../public/imuslims-logo.png'
 import { useState } from 'react'
+import Header from './components/Header'
 import Home from './components/Home'
 import About from './components/About'
 import Events from './components/Events'
@@ -12,15 +12,7 @@ function App() {
 
   return (
     <>
-      <header>
-        <img src={imuslimsLogo} className='logo' alt='imuslims logo' />
-        <div className='navButtons'>
-          <button className={page == 'Home' ? 'selectedPage' : ''} onClick={() => setPage('Home')}>Home</button>
-          <button className={page == 'Events' ? 'selectedPage' : ''} onClick={() => setPage('Events')}>Events</button>
-          <button className={page == 'About' ? 'selectedPage' : ''} onClick={() => setPage('About')}>About Us</button>
-          <button className={page == 'Connect' ? 'selectedPage' : ''} onClick={() => setPage('Connect')}>Let's Connect</button>
-        </div>
-      </header>
+      <Header page={page} setPage={setPage} />
       {(page == 'Events') ? <Events /> :
        (page == 'About') ? <About /> :
        (page == 'Connect') ? <Connect /> :
@@ -28,7 +20,6 @@ function App() {
 
 
       <footer>
-        <img src=""/>
         <p> partners </p>
         <p>hiya</p>
         <p>SpaceX</p>

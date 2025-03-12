@@ -15,10 +15,10 @@ function App() {
       <header>
         <img src={imuslimsLogo} className='logo' alt='imuslims logo' />
         <div className='navButtons'>
-          <button onClick={() => setPage('Home')}>Home</button>
-          <button onClick={() => setPage('Events')}>Events</button>
-          <button onClick={() => setPage('About')}>About Us</button>
-          <button onClick={() => setPage('Connect')}>Let's Connect</button>
+          <button className={page == 'Home' ? 'selectedPage' : ''} onClick={() => setPage('Home')}>Home</button>
+          <button className={page == 'Events' ? 'selectedPage' : ''} onClick={() => setPage('Events')}>Events</button>
+          <button className={page == 'About' ? 'selectedPage' : ''} onClick={() => setPage('About')}>About Us</button>
+          <button className={page == 'Connect' ? 'selectedPage' : ''} onClick={() => setPage('Connect')}>Let's Connect</button>
         </div>
       </header>
       {(page == 'Events') ? <Events /> :

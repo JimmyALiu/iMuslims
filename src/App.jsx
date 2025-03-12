@@ -1,4 +1,5 @@
 import './index.css';
+import imuslimsLogo from '../public/imuslims-logo.png'
 import { useState } from 'react'
 import Home from './components/Home'
 import About from './components/About'
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
       <header>
+        <img src={imuslimsLogo} className='logo' alt='imuslims logo' />
         <div className='navButtons'>
           <button onClick={() => setPage('Home')}>Home</button>
           <button onClick={() => setPage('Events')}>Events</button>

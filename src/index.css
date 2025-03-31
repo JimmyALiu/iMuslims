@@ -4,6 +4,8 @@ body {
     background-color: #fffcf7;
 }
 
+/* Header styles */
+
 header {
     font-family: 'Oswald', sans-serif;
     display: flex;
@@ -59,3 +61,6 @@ header {
 .selectedPage {
     text-shadow: 0.8px 0px 0px #FEB954;
 }
+
+
+/* Home page styles */

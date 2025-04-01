@@ -3,9 +3,9 @@ import homeBanner from '../../public/home_banner.png'
 
 export default function Home() {
     return (
-        <>
+        <section className='home'>
             <img src={homeBanner} className='banner'></img>
-            <div>
+            <div className='home-content'>
                 <h1>Who are we?</h1>
                 <div>
                     <p>
@@ -42,6 +42,6 @@ export default function Home() {
 
                 <p>View Full Calendar</p>
             </div>
-        </>
+        </section>
     )
 }

@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <footer>
             <div>
-                <img src={imuslimsLogo} className='footerLogo' alt='imuslims logo' />
+                <img src={imuslimsLogo} className='footer-logo' alt='imuslims logo' />
                 <h3>Partners</h3>
                 <p>Hiya</p>
                 <p>SpaceX</p>

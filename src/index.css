@@ -28,7 +28,7 @@ header {
     margin-bottom: 0px;
 }
 
-.navButtons {
+.nav-buttons {
     height: 100%;
     width: 40%;
     margin-left: auto;
@@ -39,7 +39,7 @@ header {
     gap: 2.75rem;
 }
 
-.navButtons button {
+.nav-buttons button {
     font-family: inherit;
     font-size: 32px;
     white-space: nowrap;
@@ -55,12 +55,12 @@ header {
     cursor: pointer;
 }
 
-.navButtons button:hover { 
+.nav-buttons button:hover { 
     text-shadow: 0.8px 0px 0px #FEB954;
     transition-duration: 225ms;
 }
 
-.selectedPage {
+.selected-page {
     text-shadow: 0.8px 0px 0px #FEB954;
 }
 
@@ -91,7 +91,7 @@ footer div h3 {
     font-size: 24px;
 }
 
-.footerLogo {
+.footer-logo {
     aspect-ratio: auto;
     width: 180px;
     margin-bottom: 1.5px;
@@ -99,6 +99,11 @@ footer div h3 {
 
 
 /* Home page styles */
+
+.home {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 .banner {
     width: 100%;

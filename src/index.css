@@ -5,17 +5,29 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    color: #6A3D9B;
+}
+
+.container {
+    font-family: 'Poppins', sans-serif;
+    background-color: #D9D9D9;
+    color: #3D1E6B;
+    border-radius: 20px;
+}
+
 
 /* Header styles */
 
 header {
     font-family: 'Oswald', sans-serif;
     display: flex;
-    /* background-color: gray; */
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    min-width: 750px;
+    min-width: 1000px;
     height: 145px;
     overflow: hidden;
     box-sizing: border-box;
@@ -101,11 +113,60 @@ footer div h3 {
 /* Home page styles */
 
 .home {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    min-width: 1000px;
+}
+
+.home-content {
+    padding-top: 95px;
+    padding-bottom: 50px;
 }
 
 .banner {
     width: 100%;
-    min-width: 750px;
+}
+
+.who {
+    display: flex;
+    flex-direction: column;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.who-heading {
+    display: flex;
+    justify-content: center;
+    padding-right: 65%;
+    min-width: 350px;
+    max-width: 500px;
+}
+
+.who .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 906px;
+    height: 395px;
+    display: flex;
+    align-items: center;
+}
+
+.who .container p {
+    text-align: left;
+    font-size: 28px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.who-footer {
+    height: 100px;
+    max-width: 1450px;
+    margin: auto;
+    padding-right: 2%;
+}
+
+.who-footer p {
+    font-family: 'Oswald' sans-serif;
+    text-align: right;
+    font-size: 24px;
+    color: #6A3D9B;
 }

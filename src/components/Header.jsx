@@ -1,4 +1,4 @@
-import imuslimsLogo from '../../public/imuslims-logo.png'
+import imuslimsLogo from '../../public/circle-logo.png'
 import React from 'react'
 
 export default function Header(props) {

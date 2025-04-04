@@ -8,7 +8,7 @@ body {
 h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 48px;
-    color: #6A3D9B;
+    color: #8666C2;
 }
 
 .container {
@@ -117,7 +117,7 @@ footer div h3 {
 /* Home page styles */
 
 .home {
-    min-width: 1000px;
+    min-width: 1024px;
 }
 
 .home-content {
@@ -138,11 +138,18 @@ footer div h3 {
 }
 
 .who-heading {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 65%;
+    height: 77px;
     display: flex;
     justify-content: center;
-    padding-right: 65%;
-    min-width: 350px;
-    max-width: 500px;
+    align-items: center;
+}
+
+.who-heading h1 {
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .who .container {

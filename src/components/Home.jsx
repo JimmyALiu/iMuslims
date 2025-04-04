@@ -1,5 +1,5 @@
 import React from 'react'
-import homeBanner from '../../public/home_banner.png'
+import homeBanner from '../../public/home-banner.png'
 
 export default function Home() {
     return (

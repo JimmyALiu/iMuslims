@@ -29,27 +29,35 @@ export default function Home() {
 
                 <div className='events'>
                     <h1>Upcoming Events</h1>
-                    <div>
-                        <h2>Kick off Meeting!</h2>
-                        <p>What?</p>
-                        <p>When?</p>
-                        <p>Where?</p>
-                    </div>
+                    <div className='events-container'>
+                        <div className='container'>
+                            <h2>Kick off Meeting!</h2>
+                            <div className='text-container'>
+                                <p>What?</p>
+                                <p>When?</p>
+                                <p>Where?</p>
+                            </div>
+                        </div>
 
-                    <div>
-                        <h2>Binfo Iftar</h2>
-                        <p>What?</p>
-                        <p>When?</p>
-                        <p>Where?</p>
-                    </div>
+                        <div className='container'>
+                            <h2>Binfo Iftar</h2>
+                            <div className='text-container'>
+                                <p>What?</p>
+                                <p>When?</p>
+                                <p>Where?</p>
+                            </div>
+                        </div>
 
-                    <div>
-                        <h2>Panel</h2>
-                        <p>What?</p>
-                        <p>When?</p>
-                        <p>Where?</p>
-                    </div>
+                        <div className='container'>
+                            <h2>Panel</h2>
+                            <div className='text-container'>
+                                <p>What?</p>
+                                <p>When?</p>
+                                <p>Where?</p>
+                            </div>
+                        </div>
 
+                    </div>
                     <p>View Full Calendar</p>
                 </div>
             </div>

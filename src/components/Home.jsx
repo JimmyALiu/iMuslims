@@ -1,4 +1,5 @@
 import React from 'react'
+import star from '../../public/star.png'
 import homeBanner from '../../public/home-banner.png'
 
 export default function Home() {
@@ -8,7 +9,9 @@ export default function Home() {
             <div className='home-content'>
                 <div className='who'>
                     <div className='who-heading'>
+                        <img src={star} className='star star-top-left'></img>
                         <h1>Who are we?</h1>
+                        <img src={star} className='star star-bot-right'></img>
                     </div>
                     <div className='container'>
                         <p>

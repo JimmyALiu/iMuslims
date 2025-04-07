@@ -131,7 +131,7 @@ footer div h3 {
 
 /* Home page styles */
 
-.home {
+.home, .events {
     min-width: 1024px;
 }
 
@@ -204,4 +204,43 @@ footer div h3 {
     font-size: 18px;
     font-weight: bold;
     color: #6A3D9B;
+}
+
+.events h1 {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.events-container {
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+}
+
+.events-container .container {
+    width: 24vw;
+}
+
+.events-container .container h2 {
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 32px;
+}
+
+.events-container .container .text-container {
+    width: 78%;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.events-container .container .text-container p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    font-style: italic
 }

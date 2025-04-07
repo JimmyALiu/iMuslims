@@ -23,6 +23,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className='who-footer'>
+                    {/* TODO Add a link to About page once routing is set up */}
                     <p>Learn More About Us!</p>
                 </div>
 

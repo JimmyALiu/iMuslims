@@ -167,31 +167,41 @@ footer div h3 {
 }
 
 .who .container {
+    width: 80vw;
+    min-width: 600px;
+    max-width: 950px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 906px;
-    height: 395px;
     display: flex;
     align-items: center;
 }
 
 .who .container p {
+    min-width: 500px;
+    max-width: 950px;
     text-align: left;
-    font-size: 28px;
-    padding-left: 25px;
-    padding-right: 25px;
+    font-size: 18px;
+    color: #3D1E6B;
+    line-height: 150%;
+    padding: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .who-footer {
+    width: 80vw;
     height: 100px;
-    max-width: 1450px;
+    min-width: 600px;
+    max-width: 950px;
     margin: auto;
-    padding-right: 2%;
+    margin-top: 20px;
 }
 
 .who-footer p {
     font-family: 'Oswald' sans-serif;
     text-align: right;
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: bold;
     color: #6A3D9B;
 }

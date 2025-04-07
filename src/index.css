@@ -213,12 +213,12 @@ footer div h3 {
 
 .events-container {
     display: flex;
-    gap: 3vw;
+    gap: 3%;
     justify-content: center;
 }
 
 .events-container .container {
-    width: 24vw;
+    width: 24%;
 }
 
 .events-container .container h2 {

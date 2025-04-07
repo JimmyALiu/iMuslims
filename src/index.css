@@ -18,6 +18,21 @@ h1 {
     border-radius: 20px;
 }
 
+.star {
+    aspect-ratio: auto;
+    width: 62px;
+    position: relative;
+}
+
+.star-top-left {
+    bottom: 30px;
+}
+
+.star-bot-right {
+    top: 35px;
+    right: 5px;
+}
+
 
 /* Header styles */
 
@@ -145,11 +160,6 @@ footer div h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.who-heading h1 {
-    padding-left: 2vw;
-    padding-right: 2vw;
 }
 
 .who .container {

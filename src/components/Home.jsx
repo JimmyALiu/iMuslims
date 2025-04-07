@@ -58,7 +58,10 @@ export default function Home() {
                         </div>
 
                     </div>
-                    <p>View Full Calendar</p>
+                    <div className='events-footer'>
+                        {/* TODO Add a link to Events page once routing is set up */}
+                        <p>View Full Calendar</p>
+                    </div>
                 </div>
             </div>
         </section>

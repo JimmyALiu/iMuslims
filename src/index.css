@@ -8,7 +8,7 @@ body {
 h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 48px;
-    color: #6A3D9B;
+    color: #8666C2;
 }
 
 .container {
@@ -16,6 +16,21 @@ h1 {
     background-color: #D9D9D9;
     color: #3D1E6B;
     border-radius: 20px;
+}
+
+.star {
+    aspect-ratio: auto;
+    width: 62px;
+    position: relative;
+}
+
+.star-top-left {
+    bottom: 30px;
+}
+
+.star-bot-right {
+    top: 40px;
+    right: 10px;
 }
 
 
@@ -116,8 +131,8 @@ footer div h3 {
 
 /* Home page styles */
 
-.home {
-    min-width: 1000px;
+.home, .events {
+    min-width: 1024px;
 }
 
 .home-content {
@@ -138,39 +153,106 @@ footer div h3 {
 }
 
 .who-heading {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 65%;
+    height: 77px;
     display: flex;
     justify-content: center;
-    padding-right: 65%;
-    min-width: 350px;
-    max-width: 500px;
+    align-items: center;
+}
+
+.who-heading h1 {
+    white-space: nowrap;
 }
 
 .who .container {
+    width: 80vw;
+    min-width: 600px;
+    max-width: 950px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 906px;
-    height: 395px;
     display: flex;
     align-items: center;
 }
 
 .who .container p {
+    min-width: 500px;
+    max-width: 950px;
     text-align: left;
-    font-size: 28px;
-    padding-left: 25px;
-    padding-right: 25px;
+    font-size: 18px;
+    color: #3D1E6B;
+    line-height: 150%;
+    padding: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .who-footer {
+    width: 80vw;
     height: 100px;
-    max-width: 1450px;
+    min-width: 600px;
+    max-width: 950px;
     margin: auto;
-    padding-right: 2%;
+    margin-top: 20px;
 }
 
-.who-footer p {
+.events h1 {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.events-container {
+    display: flex;
+    gap: 3%;
+    justify-content: center;
+}
+
+.events-container .container {
+    width: 24%;
+}
+
+.events-container .container h2 {
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 32px;
+}
+
+.events-container .container .text-container {
+    width: 78%;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.events-container .container .text-container p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    font-style: italic
+}
+
+.events-footer {
+    min-width: 1024px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+.events-footer p{
+    padding-right: 11%;
+}
+
+.who-footer p, .events-footer p {
     font-family: 'Oswald' sans-serif;
     text-align: right;
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: 600;
     color: #6A3D9B;
 }

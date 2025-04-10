@@ -1,6 +1,7 @@
 import React from "react";
 import teamImage from "../../public/team-image.png";
 import star from "../../public/smoothcorner.png";
+import "../about-page.css";
 
 export default function About() {
   return (

@@ -1,42 +1,78 @@
 /* About Page Styles */
 .teamPicture {
+  /* TODO: photo*/
   width: 100%;
-  display: flex;
+}
+.star {
+  aspect-ratio: auto;
+  width: 62px;
+  position: relative;
+}
+.star-top-left {
+  top: 80px;
+  right: 160px;
 }
 
+.star-bot-right {
+  top: 160px;
+  left: 150px;
+}
 .how {
-  margin-left: 200px;
+  margin-left: 130px;
   margin-top: 140px;
 }
 .how h1 {
   margin-top: 0px;
+  color: #8666c2;
 }
-.boardContainer {
+.boardHeaderContainer {
   text-align: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
-.begainContainer {
-  width: 1050px;
+.boardHeaderContainer h1 {
+  color: #8666c2;
+}
+.beganContainer {
+  width: 900px;
   height: 450px;
+  overflow: hidden;
   background-color: #d9d9d9;
   border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.star {
-  margin-bottom: 0px;
-}
 .boardGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 50px 30px;
+  gap: 140px 10px;
   justify-items: center;
   margin-bottom: 300px;
 }
-.boardInnerContainer {
+.boardCard {
+  display: flex;
+  justify-content: center;
+  align-items: end;
   background-color: #d9d9d9;
   width: 320px;
-  height: 300px;
+  height: 420px;
   border-radius: 20px;
+}
+.boardCard h2 {
+  text-align: center;
+  font-family: "Oswald";
+  margin: 0px;
+  font-weight: 600;
+  color: #3d1e6b;
+  font-size: 28px;
+}
+
+.boardCard h3 {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 400;
+  color: #3d1e6b;
+  text-align: center;
 }

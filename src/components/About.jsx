@@ -8,20 +8,71 @@ export default function About() {
     <section>
       <img src={teamImage} className="teamPicture" />
       <div className="how">
-        <img className="star" src={star}></img>
         <h1>How It All Began?</h1>
       </div>
-      <div className="begainContainer"></div>
-      <div className="boardContainer">
+      <div className="beganContainer"></div>
+      <div className="boardHeaderContainer">
+        <img src={star} className="star star-top-left"></img>
+        <img src={star} className="star star-bot-right"></img>
         <h1>Meet Our Board</h1>
       </div>
       <div className="boardGrid">
-        <div className="boardInnerContainer"></div>
-        <div className="boardInnerContainer"></div>
-        <div className="boardInnerContainer"></div>
-        <div className="boardInnerContainer"></div>
-        <div className="boardInnerContainer"></div>
-        <div className="boardInnerContainer"></div>
+        <div className="boardCard">
+          <div>
+            <h2>Zareen Tasmin</h2>
+            <h3>Co-President</h3>
+            <h3>Informatics - Senior</h3>
+          </div>
+        </div>
+        <div className="boardCard">
+          <div>
+            <h2>Safa Jamal</h2>
+            <h3>Co-President</h3>
+            <h3>Informatics - Senior</h3>
+          </div>
+        </div>
+        <div className="boardCard">
+          <div>
+            <h2>Heena Vahora</h2>
+            <h3>Director of Diverstiy Outreach</h3>
+            <h3>Informatics - Senior</h3>
+          </div>
+        </div>
+        <div className="boardCard">
+          <div>
+            <h2>Razan Mansour</h2>
+            <h3>Director of Finance</h3>
+            <h3>Informatics - Senior</h3>
+          </div>
+        </div>
+        <div className="boardCard">
+          <div>
+            <h2>Minnah Tazmeen</h2>
+            <h3>Creative Director</h3>
+            <h3>Informatics - Senior</h3>
+          </div>
+        </div>
+        <div className="boardCard">
+          <div>
+            <h2>Zakiyah Farooque</h2>
+            <h3>Director of Organizational Affairs</h3>
+            <h3>Informatics - Senior</h3>
+          </div>
+        </div>
+        <div className="boardCard">
+          <div>
+            <h2>Faiza Imran</h2>
+            <h3>Director of Professional Outreach</h3>
+            <h3>Informatics - Senior</h3>
+          </div>
+        </div>
+        <div className="boardCard">
+          <div>
+            <h2>Sarah Ghamadsi</h2>
+            <h3>Director of PR</h3>
+            <h3>Informatics - Senior</h3>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
 /* About Page Styles */
+
+/* Team picture fills view port but horizontal blank space appears*/
 .teamPicture {
-  /* TODO: photo*/
   width: 100%;
 }
 .star {

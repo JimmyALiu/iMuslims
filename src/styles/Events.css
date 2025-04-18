@@ -1,0 +1,32 @@
+.events-wrapper {
+    width: 100%;
+}
+
+.events-banner {
+    /* center header with flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.events-banner img {
+    /* note that the raw image contains a little white strip on the left side it's not the styling */
+    width: 100%;
+
+    /* overlay it with black */
+    filter: brightness(50%);
+}
+
+.events-banner h1 {
+    /* imported this font in the html file from google fonts */
+    font-family: 'Aboreto';
+    color: white;
+
+    /* document will not allocate any space for the h1, will be relative to parent */
+    position: absolute;
+    text-align: center;
+}
+
+.page-min-width {
+    min-width: 1024px;
+}

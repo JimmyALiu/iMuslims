@@ -5,7 +5,7 @@ import "../about-page.css";
 export default function About() {
   return (
     <section>
-      <img src="/public/team-image.png" className="teamPicture" />
+      <img src="/team-image.png" className="teamPicture" />
       <div className="how">
         <h1>How It All Began?</h1>
       </div>

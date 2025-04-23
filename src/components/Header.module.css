@@ -1,0 +1,58 @@
+.header {
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-width: 1024px;
+    height: 108px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.logo {
+    aspect-ratio: auto;
+    width: 75px;
+    margin-left: 26px;
+}
+
+.navButtons {
+    height: 64px;
+    width: 40%;
+    margin-left: auto;
+    padding-right: 35px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 25px;
+}
+
+.navButtons button {
+    font-family: inherit;
+    font-size: 32px;
+    font-weight: 600;
+    white-space: nowrap;
+    color: #3d1e6b;
+    border: none;
+    background-color: inherit;
+    max-width: max-content;
+    height: 60%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navButtons button:hover {
+    color: #29104e;
+    text-shadow: 0px 0px 0.8px #29104e;
+    transition-duration: 225ms;
+}
+
+.navButtons .selected-page {
+    color: #29104e;
+    text-shadow: 0px 0px 0.5px #29104e;
+    transition-duration: 225ms;
+}

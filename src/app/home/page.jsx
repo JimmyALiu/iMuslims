@@ -1,19 +1,18 @@
+import styles from './page.module.css';
 import React from 'react'
-import star from '../../public/star.png'
-import homeBanner from '../../public/home-banner.png'
 
 export default function Home() {
     return (
-        <section className='home'>
-            <img src={homeBanner} className='banner'></img>
-            <div className='home-content'>
-                <div className='who'>
-                    <div className='who-heading'>
-                        <img src={star} className='star star-top-left'></img>
+        <section className={styles.home}>
+            <img src="/home-banner.png" className={styles.banner}></img>
+            <div className={styles.homeContent}>
+                <div className={styles.who}>
+                    <div className={styles.whoHeading}>
+                        <img src="/star.png" className={'star ' + styles.starTopLeft}></img>
                         <h1>Who are we?</h1>
-                        <img src={star} className='star star-bot-right'></img>
+                        <img src="/star.png" className={'star ' + styles.starBotRight}></img>
                     </div>
-                    <div className='container'>
+                    <div className={styles.container}>
                         <p>
                             Our organization is dedicated to providing Muslim students at the iSchool with professional
                             and developmental support while fostering an inclusive environment. We empower Muslim students
@@ -22,35 +21,35 @@ export default function Home() {
                         </p>
                     </div>
                 </div>
-                <div className='who-footer'>
+                <div className={styles.whoFooter}>
                     {/* TODO Add a link to About page once routing is set up */}
                     <p>Learn More About Us!</p>
                 </div>
 
-                <div className='events'>
+                <div className={styles.events}>
                     <h1>Upcoming Events</h1>
-                    <div className='events-container'>
-                        <div className='container'>
+                    <div className={styles.eventsContainer}>
+                        <div className="container">
                             <h2>Kick off Meeting!</h2>
-                            <div className='text-container'>
+                            <div className={styles.textContainer}>
                                 <p>What?</p>
                                 <p>When?</p>
                                 <p>Where?</p>
                             </div>
                         </div>
 
-                        <div className='container'>
+                        <div className="container">
                             <h2>Binfo Iftar</h2>
-                            <div className='text-container'>
+                            <div className={styles.textContainer}>
                                 <p>What?</p>
                                 <p>When?</p>
                                 <p>Where?</p>
                             </div>
                         </div>
 
-                        <div className='container'>
+                        <div className="container">
                             <h2>Panel</h2>
-                            <div className='text-container'>
+                            <div className={styles.textContainer}>
                                 <p>What?</p>
                                 <p>When?</p>
                                 <p>Where?</p>
@@ -58,7 +57,7 @@ export default function Home() {
                         </div>
 
                     </div>
-                    <div className='events-footer'>
+                    <div className={styles.eventsFooter}>
                         {/* TODO Add a link to Events page once routing is set up */}
                         <p>View Full Calendar</p>
                     </div>

@@ -1,3 +1,5 @@
+import '../styles/global.css';
+
 export const metadata = {
     title: 'iMuslims',
     description: 'Website created with Nextjs and React'

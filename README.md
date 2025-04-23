@@ -1,12 +1,20 @@
-# React + Vite
+# Next.js Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Getting Started
+Run npm install to install dependencies for this project
 
-Currently, two official plugins are available:
+## File structure
+The public folder contains all the image assets, and can be accesed in image tags using\
+`<img src='/filename.png' alt='some image'>`\
+Note that files within the public folder can be automatically referenced using just `/` as the base url\\
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The `src` folder contains all the code required to run the project. `app` contains all the information required for [routing](https://github.com/JimmyALiu/iMuslims/edit/migrate-nextjs/README.md#routing). `components` contains all the react components that don't require a route (those go in `app`), and `styles` contains the global CSS styles.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Routing
+
+
+## CSS Modules
+
+
+## Todos

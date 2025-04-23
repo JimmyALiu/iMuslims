@@ -1,4 +1,4 @@
-header {
+.header {
     font-family: "Oswald", sans-serif;
     display: flex;
     justify-content: space-between;
@@ -8,15 +8,15 @@ header {
     height: 108px;
     overflow: hidden;
     box-sizing: border-box;
-  }
-  
-  .logo {
+}
+
+.logo {
     aspect-ratio: auto;
     width: 75px;
     margin-left: 26px;
-  }
-  
-  .nav-buttons {
+}
+
+.navButtons {
     height: 64px;
     width: 40%;
     margin-left: auto;
@@ -26,9 +26,9 @@ header {
     justify-content: right;
     align-items: center;
     gap: 25px;
-  }
-  
-  .nav-buttons button {
+}
+
+.navButtons button {
     font-family: inherit;
     font-size: 32px;
     font-weight: 600;
@@ -43,16 +43,16 @@ header {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-  }
-  
-  .nav-buttons button:hover {
+}
+
+.navButtons button:hover {
     color: #29104e;
     text-shadow: 0px 0px 0.8px #29104e;
     transition-duration: 225ms;
-  }
-  
-  .nav-buttons .selected-page {
+}
+
+.navButtons .selected-page {
     color: #29104e;
     text-shadow: 0px 0px 0.5px #29104e;
     transition-duration: 225ms;
-  }
+}

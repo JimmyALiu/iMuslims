@@ -1,3 +1,4 @@
+import styles from './page.module.css';
 import React from "react";
 import teamImage from "../../public/team-image.png";
 import star from "../../public/smoothcorner.png";

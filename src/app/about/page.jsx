@@ -1,20 +1,18 @@
 import styles from './page.module.css';
 import React from "react";
-import teamImage from "../../public/team-image.png";
-import star from "../../public/smoothcorner.png";
 import "../about-page.css";
 
 export default function About() {
   return (
     <section>
-      <img src={teamImage} className="teamPicture" />
+      <img src="/public/team-image.png" className="teamPicture" />
       <div className="how">
         <h1>How It All Began?</h1>
       </div>
       <div className="beganContainer"></div>
       <div className="boardHeaderContainer">
-        <img src={star} className="star star-top-left"></img>
-        <img src={star} className="star star-bot-right"></img>
+        <img src="/smoothcorner.png" className="star star-top-left"></img>
+        <img src="/smoothcorner.png" className="star star-bot-right"></img>
         <h1>Meet Our Board</h1>
       </div>
       <div className="boardGrid">

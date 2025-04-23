@@ -45,6 +45,3 @@ export default function Home() {
 ```
 > [!NOTE]
 > We still use the string notation for global styles, but module styles require using styles.className. To use both, we have to concatenate them together as a string
-
-
-## Todos

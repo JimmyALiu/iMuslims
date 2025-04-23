@@ -44,4 +44,5 @@ export default function Home() {
 
 ```
 > [!NOTE]
-> We still use the string notation for global styles, but module styles require using styles.className. To use both, we have to concatenate them together as a string
+> We still use the string notation for global styles, but module styles require using styles.className. To use both, we have to concatenate them together as a string.
+> Also note that this means we must use camelCase for class names because CSS modules don't allow for dashes (-).

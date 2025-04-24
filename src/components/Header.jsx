@@ -1,16 +1,22 @@
+// inform Next.js that this is a client component, meaning it relies on input from the client
+// this is to retain the bold style on the current button that is selected when you click on a page
+"use client";
+
 import styles from './Header.module.css';
 import React from 'react';
+import { useState } from 'react';
+import Navbar from
+
+'../components/Navbar';
 
 export default function Header() {
+    // will either be in the state: 'home', 'events', 'about', or 'connect'
+    const [page, setPage] = useState('home');
+
     return (
         <header className={styles.header}>
-            <img src='/circle-logo.png' className={styles.logo} alt='imuslims logo' />
-            <div className={styles.navButtons}>
-                {/* <button className={page == 'Home' ? 'selected-page' : ''} onClick={() => setPage('Home')}>Home</button>
-                <button className={page == 'Events' ? 'selected-page' : ''} onClick={() => setPage('Events')}>Events</button>
-                <button className={page == 'About' ? 'selected-page' : ''} onClick={() => setPage('About')}>About</button>
-                <button className={page == 'Connect' ? 'selected-page' : ''} onClick={() => setPage('Connect')}>Join Us</button> */}
-            </div>
+            <img src='/imuslims-logo.png' className={styles.logo} alt='imuslims logo' />
+            <Navbar page={page} setPage={setPage} />
         </header>
     )
 }

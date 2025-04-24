@@ -19,3 +19,8 @@
     text-shadow: -0.5px 0px 0.8px #29104e;
     transition-duration: 225ms;
 }
+
+.selected {
+    color: #29104e;
+    text-shadow: -0.5px 0px 0.8px #29104e;
+}

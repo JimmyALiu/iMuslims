@@ -15,7 +15,7 @@ export default function Header() {
 
     return (
         <header className={styles.header}>
-            <img src='/circle-logo.png' className={styles.logo} alt='imuslims logo' />
+            <img src='/imuslims-logo.png' className={styles.logo} alt='imuslims logo' />
             <Navbar page={page} setPage={setPage} />
         </header>
     )

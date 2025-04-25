@@ -1,10 +1,11 @@
+import styles from './Footer.module.css'
 import React from 'react'
 
 export default function Footer() {
     return (
-        <footer>
+        <footer className={styles.footer}>
             <div>
-                <img src='/imuslims-logo.png' className='footer-logo' alt='imuslims logo' />
+                <img src='/imuslims-logo.png' className={styles.footerLogo} alt='imuslims logo' />
                 <h3>Partners</h3>
                 <p>Hiya</p>
                 <p>SpaceX</p>

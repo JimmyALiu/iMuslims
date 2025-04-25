@@ -4,23 +4,29 @@ import React from 'react'
 export default function Footer() {
     return (
         <footer className={styles.footer}>
-            <div>
-                <img src='/imuslims-logo.png' className={styles.footerLogo} alt='imuslims logo' />
-                <h3>Partners</h3>
-                <p>Hiya</p>
-                <p>SpaceX</p>
-                <p>Microsoft</p>
-                <p>Liberty Mutual</p>
-                <p>Startup</p>
-            </div>
+            <div className={styles.footerInfo}>
+                <div>
+                    <img src='/imuslims-logo.png' className={styles.footerLogo} alt='imuslims logo' />
+                </div>
 
-            <div>
-                <p>Subscribe to stay tuned for our upcoming events!</p>
-            </div>
+                <div>
+                    <h3>Resources</h3>
+                </div>
 
-            <div>
-                <p>Follow us</p>
+                <div>
+                    <h3>Quick Links</h3>
+                </div>
+
+                <div>
+                    <h3>Contact us</h3>
+                </div>
+            </div>
+            <hr className={styles.divider} />
+            <div className={styles.footerCopyright}>
+                <p>Copyright 2025</p>
+                <p>All Rights Reserved</p>
             </div>
         </footer>
     )
 }
+

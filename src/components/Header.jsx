@@ -5,7 +5,9 @@
 import styles from './Header.module.css';
 import React from 'react';
 import { useState } from 'react';
-import Navbar from
+import Navbar from './Navbar'
+import Link from 'next/link'
+
 
 '../components/Navbar';
 
@@ -15,7 +17,8 @@ export default function Header() {
 
     return (
         <header className={styles.header}>
-            <img src='/imuslims-logo.png' className={styles.logo} alt='imuslims logo' />
+            <Link className={styles.logoContainer} onClick={() => setPage('home')} href='/home'><img src='/imuslims-logo.png' className={styles.logo} alt='imuslims logo' /></Link>
+            {/* <img src='/imuslims-logo.png' className={styles.logo} alt='imuslims logo' /> */}
             <Navbar page={page} setPage={setPage} />
         </header>
     )

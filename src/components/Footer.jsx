@@ -6,7 +6,7 @@ export default function Footer() {
         <footer className={styles.footer}>
             <div className={styles.footerInfo}>
                 <div>
-                    <img src='/imuslims-logo.png' className={styles.footerLogo} alt='imuslims logo' />
+                    <img src='/imuslims-logo-transparent.png' className={styles.footerLogo} alt='imuslims logo' />
                 </div>
 
                 <div>

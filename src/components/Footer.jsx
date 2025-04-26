@@ -7,18 +7,33 @@ export default function Footer() {
             <div className={styles.footerInfo}>
                 <div>
                     <img src='/imuslims-logo-transparent.png' className={styles.footerLogo} alt='imuslims logo' />
+                    <p>Empowering Muslim students to lead, connect, and thrive.</p>
                 </div>
 
                 <div>
                     <h3>Resources</h3>
+                    <p>Prayer Times</p>
+                    <p>Campus Prayer Spaces</p>
                 </div>
 
                 <div>
                     <h3>Quick Links</h3>
+                    <p>Upcoming Events</p>
+                    <p>Past Events</p>
+                    <p>Our Board</p>
+                    <p>Membership Form</p>
                 </div>
 
                 <div>
                     <h3>Contact us</h3>
+                    <div>
+                        <i className="fa-regular fa-envelope"></i>
+                        <p>contact@company.com</p>
+                    </div>
+                    <div>
+                        <i className="fa-brands fa-instagram"></i>
+                        <i className="fa-brands fa-linkedin-in"></i>
+                    </div>
                 </div>
             </div>
             <hr className={styles.divider} />

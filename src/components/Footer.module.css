@@ -11,12 +11,12 @@
 
 .footerInfo {
     display: flex;
-    gap: 25px;
     justify-content: center;
     align-items: start;
+    gap: 6rem;
 }
 
-.footerInfo div {
+.logoCol {
     width: 300px;
 }
 
@@ -44,8 +44,20 @@
 }
 
 .linkCol {
-    padding-top: 30px;
-    height: 350px;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 60px;
+    margin-bottom: 50px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.linkCol h3 {
+    font-size: 20px;
+    color: #FEB954;
 }
 
 .divider {

@@ -14,27 +14,33 @@ export default function Footer() {
 
                 <div className={styles.linkCol}>
                     <h3>Resources</h3>
-                    <p>Prayer Times</p>
-                    <p>Campus Prayer Spaces</p>
+                    <div>
+                        <p>Prayer Times</p>
+                        <p>Campus Prayer Spaces</p>
+                    </div>
                 </div>
 
                 <div className={styles.linkCol}>
                     <h3>Quick Links</h3>
-                    <p>Upcoming Events</p>
-                    <p>Past Events</p>
-                    <p>Our Board</p>
-                    <p>Membership Form</p>
+                    <div>
+                        <p>Upcoming Events</p>
+                        <p>Past Events</p>
+                        <p>Our Board</p>
+                        <p>Membership Form</p>
+                    </div>
                 </div>
 
                 <div className={styles.linkCol}>
                     <h3>Contact us</h3>
                     <div>
-                        <i className="fa-regular fa-envelope"></i>
-                        <p>contact@company.com</p>
-                    </div>
-                    <div>
-                        <i className="fa-brands fa-instagram"></i>
-                        <i className="fa-brands fa-linkedin-in"></i>
+                        <div>
+                            <i className="fa-regular fa-envelope"></i>
+                            <p>contact@company.com</p>
+                        </div>
+                        <div>
+                            <i className="fa-brands fa-instagram"></i>
+                            <i className="fa-brands fa-linkedin-in"></i>
+                        </div>
                     </div>
                 </div>
             </div>

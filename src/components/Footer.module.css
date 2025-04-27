@@ -2,6 +2,7 @@
     background-color: #784390;
     font-family: inter;
     color: #ffffff;
+    letter-spacing: 0.02rem;
     height: fit-content;
     min-width: 1024px;
     padding-top: 25px;
@@ -58,6 +59,33 @@
 .linkCol h3 {
     font-size: 20px;
     color: #FEB954;
+}
+
+.email, .socials {
+    display: flex;
+    align-items: center;
+}
+
+.email p {
+    padding-left: 0.5rem;
+}
+
+.socials {
+    padding-top: 0.5rem;
+}
+
+.instagram {
+    font-size: 32px;
+}
+
+.linkedIn {
+    font-size: 15px;
+    padding: 0.3rem;
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+    margin-left: 1rem;
+    border: solid white 3px;
+    border-radius: 0.3rem;
 }
 
 .divider {

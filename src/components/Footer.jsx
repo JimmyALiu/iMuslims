@@ -33,13 +33,13 @@ export default function Footer() {
                 <div className={styles.linkCol}>
                     <h3>Contact us</h3>
                     <div>
-                        <div>
+                        <div className={styles.email}>
                             <i className="fa-regular fa-envelope"></i>
                             <p>contact@company.com</p>
                         </div>
-                        <div>
-                            <i className="fa-brands fa-instagram"></i>
-                            <i className="fa-brands fa-linkedin-in"></i>
+                        <div className={styles.socials}>
+                            <i className={"fa-brands fa-instagram " + styles.instagram}></i>
+                            <i className={"fa-brands fa-linkedin-in " + styles.linkedIn}></i>
                         </div>
                     </div>
                 </div>

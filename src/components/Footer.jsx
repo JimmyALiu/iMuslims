@@ -5,18 +5,20 @@ export default function Footer() {
     return (
         <footer className={styles.footer}>
             <div className={styles.footerInfo}>
-                <div>
-                    <img src='/imuslims-logo-transparent.png' className={styles.footerLogo} alt='imuslims logo' />
+                <div className={styles.logoCol}>
+                    <div className={styles.crop}>
+                        <img src='/imuslims-logo-transparent.png' className={styles.footerLogo} alt='imuslims logo' />
+                    </div>
                     <p>Empowering Muslim students to lead, connect, and thrive.</p>
                 </div>
 
-                <div>
+                <div className={styles.linkCol}>
                     <h3>Resources</h3>
                     <p>Prayer Times</p>
                     <p>Campus Prayer Spaces</p>
                 </div>
 
-                <div>
+                <div className={styles.linkCol}>
                     <h3>Quick Links</h3>
                     <p>Upcoming Events</p>
                     <p>Past Events</p>
@@ -24,7 +26,7 @@ export default function Footer() {
                     <p>Membership Form</p>
                 </div>
 
-                <div>
+                <div className={styles.linkCol}>
                     <h3>Contact us</h3>
                     <div>
                         <i className="fa-regular fa-envelope"></i>

@@ -4,7 +4,7 @@
 }
 
 .homeContent {
-    padding-top: 95px;
+    padding-top: 135px;
     padding-bottom: 50px;
 }
 
@@ -15,15 +15,14 @@
 .who {
     display: flex;
     flex-direction: column;
-    max-width: 1250px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .whoHeading {
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 20px;
-    padding-right: 65%;
+    padding-right: 52%;
     height: 77px;
     display: flex;
     justify-content: center;
@@ -31,7 +30,15 @@
 }
 
 .whoHeading h1 {
+    font-family: Aboreto;
+    font-size: 48px;
+    color: #8666C2;
+    font-weight: 500;
     white-space: nowrap;
+
+    /* add a border around text */
+    -webkit-text-stroke: 2.5px #3D1E6B;
+    paint-order: stroke fill;
 }
 
 .who .container {
@@ -128,7 +135,8 @@
 
 
 .starTopLeft {
-    bottom: 30px;
+    bottom: 35px;
+    left: 10px;
 }
 
 .starBotRight {

@@ -10,9 +10,8 @@ export default function Home() {
                     <div className={styles.whoHeading}>
                         <img src="/star.png" className={'star ' + styles.starTopLeft}></img>
                         <h1>Who are we?</h1>
-                        <img src="/star.png" className={'star ' + styles.starBotRight}></img>
                     </div>
-                    <div className={styles.container}>
+                    <div className={styles.whoBody}>
                         <p>
                             Our organization is dedicated to providing Muslim students at the iSchool with professional
                             and developmental support while fostering an inclusive environment. We empower Muslim students

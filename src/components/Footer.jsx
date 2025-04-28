@@ -1,5 +1,6 @@
 import styles from './Footer.module.css'
 import React from 'react'
+import Link from 'next/link'
 
 export default function Footer() {
     return (
@@ -38,8 +39,8 @@ export default function Footer() {
                             <p>contact@company.com</p>
                         </div>
                         <div className={styles.socials}>
-                            <i className={"fa-brands fa-instagram " + styles.instagram}></i>
-                            <i className={"fa-brands fa-linkedin-in " + styles.linkedIn}></i>
+                            <Link href='https://www.instagram.com/imuslims.uw/'><i className={"fa-brands fa-instagram " + styles.instagram}></i></Link>
+                            <Link href='https://www.linkedin.com/company/imuslims-uw/'><i className={"fa-brands fa-linkedin-in " + styles.linkedIn}></i></Link>
                         </div>
                     </div>
                 </div>

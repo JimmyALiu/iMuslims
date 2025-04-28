@@ -74,6 +74,10 @@
     padding-top: 0.5rem;
 }
 
+.socials a {
+    color: white;
+}
+
 .instagram {
     font-size: 32px;
 }

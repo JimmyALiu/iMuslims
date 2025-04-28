@@ -43,27 +43,22 @@
     paint-order: stroke fill;
 }
 
-.who .container {
-    width: 80vw;
-    min-width: 600px;
-    max-width: 950px;
-    margin-top: 20px;
+.whoBody {
+    width: 77%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.who .container p {
-    min-width: 500px;
-    max-width: 950px;
+.whoBody p {
+    font-family: Gotu, 'sans-serif';
     text-align: left;
-    font-size: 18px;
-    color: #3d1e6b;
-    line-height: 150%;
-    padding: 50px;
-    padding-left: 60px;
-    padding-right: 60px;
+    font-size: 24px;
+    line-height: 225%;
+    color: #3D1E6B;
+    padding: 10px;
 }
 
 .whoFooter {

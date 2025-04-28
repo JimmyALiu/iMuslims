@@ -1,5 +1,6 @@
 import styles from './page.module.css';
 import React from 'react'
+import Link from 'next/link'
 
 export default function Home() {
     return (
@@ -22,7 +23,7 @@ export default function Home() {
                 </div>
                 <div className={styles.whoFooter}>
                     {/* TODO Add a link to About page once routing is set up */}
-                    <p>Learn More About Us!</p>
+                    <Link href='/about'><p>Learn More About Us!</p></Link>
                 </div>
 
                 <div className={styles.events}>

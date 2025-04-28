@@ -44,7 +44,7 @@
 }
 
 .whoBody {
-    width: 77%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -62,12 +62,15 @@
 }
 
 .whoFooter {
-    width: 80vw;
+    width: 75%;
     height: 100px;
-    min-width: 600px;
-    max-width: 950px;
     margin: auto;
-    margin-top: 20px;
+}
+
+.whoFooter a p {
+    font-family: Gotu, 'sans-serif';
+    font-size: 18px;
+    font-weight: 300;
 }
 
 .events h1 {

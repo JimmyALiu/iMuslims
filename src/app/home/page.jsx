@@ -22,7 +22,6 @@ export default function Home() {
                     </div>
                 </div>
                 <div className={styles.whoFooter}>
-                    {/* TODO Add a link to About page once routing is set up */}
                     <Link href='/about'><p>Learn More About Us!</p></Link>
                 </div>
 

@@ -12,18 +12,16 @@ export default function Events() {
   
   const eventsData = [
     {
-      eventName: "sample",
-      eventDetails: "somethingsomethingsomethingsomethingsomethingsomethingsomethingsomething"
+      eventName: "Upcoming Event 1",
+      eventDetails: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
-      eventName: "How can I become a member?",
-      eventDetails: "TCA accepts a new cohort every quarter. Check out the 'Join' page for more information!"
+      eventName: "Upcoming Event 2",
+      eventDetails: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
-      eventName: "What majors does TCA accept?",
-      eventDetails: "While we are in the process of getting affiliated with the Paul G. Allen School of Computer Science\
-              and Engineering, we hire members across every major! TCA has both a tech team and a business teams,\
-              so as long as you're interested in joining onr of these groups, we highly encourage you to apply!"
+      eventName: "Upcoming Event 3",
+      eventDetails: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     }
   ];
 
@@ -35,7 +33,7 @@ export default function Events() {
             </div>
 
             <div className={styles.eventTitle}>
-              <h1>Upcoming Events</h1>
+              <h1> <img src="/star.png" className={'star ' + styles.starTopLeft}></img>Upcoming Events</h1>
             </div>
             <div className={styles.eventList}>
                 {eventsData.map((item, index) => (

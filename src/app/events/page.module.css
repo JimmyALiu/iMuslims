@@ -1,0 +1,92 @@
+.eventsWrapper {
+    width: 100%;
+}
+
+.eventsBanner {
+    /* center header with flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventsBanner img {
+    /* note that the raw image contains a little white strip on the left side it's not the styling */
+    width: 100%;
+
+    /* overlay it with black */
+    filter: brightness(50%);
+}
+
+.eventsBanner h1 {
+    /* imported this font in the html file from google fonts */
+    font-family: 'Aboreto';
+    color: white;
+
+    /* document will not allocate any space for the h1, will be relative to parent */
+    position: absolute;
+    text-align: center;
+}
+
+
+.pageMinWidth {
+    min-width: 1024px;
+}
+
+.eventTitle{
+    margin-left:20vw;
+    margin-top: 5vh;
+}
+
+.pastEventTitle{
+    margin-left:20vw;
+    margin-top:15vh;
+}
+
+.eventList {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-top: 3rem;
+}
+
+.eventItem {
+    background: #FFFCF7;
+    border-bottom: 1px solid #3D1E6B;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.eventItem:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .eventName {
+    font-size: 1.3rem;
+    color: #000000;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  
+  
+  
+  .eventDetails {
+    font-size: 1.1rem;
+    color: #464a4e;
+    margin-top: 0.5rem;
+    display: none;
+  }
+  
+  .eventDetails.show {
+    display: block;
+  }
+
+  @keyframes dropDown {
+    
+  }
+

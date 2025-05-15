@@ -1,5 +1,12 @@
+.profileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
 .pictureContainer {
   background-color: #d9d9d9;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -11,16 +18,25 @@
 }
 
 .pictureInfoContainer {
+  position: absolute;
+  height: 130px;
+  width: 100%;
   text-align: center;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  background-color: #8666c2;
-  opacity: 0.7;
+  background-color: rgba(134, 102, 194, 0.7);
 }
 
 .pictureInfoContainer > * {
-  margin: 10;
   font-family: Gotu;
   font-weight: 400;
   color: #ffffff;
+}
+.pictureInfoContainer h2 {
+  margin-bottom: 0;
+  font-size: 28;
+}
+.pictureInfoContainer h3 {
+  margin: 0;
+  font-size: 18;
 }

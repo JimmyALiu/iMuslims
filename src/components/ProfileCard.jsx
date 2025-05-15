@@ -5,7 +5,11 @@ const ProfileCard = ({ name, position, major, picture }) => {
   return (
     <>
       <div className={styles.pictureContainer}>
-        <img src={picture} alt="head shot" />
+        <img
+          src={picture}
+          alt="headshot of member"
+          className={styles.profileImage}
+        />
         <div className={styles.pictureInfoContainer}>
           <h2>{name}</h2>
           <h3>{position}</h3>

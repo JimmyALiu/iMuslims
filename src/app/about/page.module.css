@@ -4,15 +4,19 @@
 .teamPicture {
   width: 100%;
 }
-
+.beganStar {
+  position: relative;
+  top: 20px;
+  right: 58px;
+}
 .starTopLeft {
-  top: 80px;
-  right: 160px;
+  top: 172px;
+  right: 128px;
 }
 
 .starBotRight {
-  top: 160px;
-  left: 150px;
+  top: 70px;
+  left: 140px;
 }
 
 .how {
@@ -32,8 +36,9 @@
   margin-top: 100px;
 }
 
-.boardHeaderContainer h1 {
+.boardText {
   color: #8666c2;
+  font-family: "Aboreto";
 }
 
 .beganContainer {

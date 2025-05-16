@@ -18,16 +18,16 @@ export default function About() {
       picture: "safa.jpg",
     },
     {
-      name: "Razan Mansour",
-      position: "Director of Finance",
-      major: "Informatics - Senior",
-      picture: "razan.jpg",
-    },
-    {
       name: "Heena Vahora",
       position: "Director of Diversity Outreach",
       major: "Informatics - Senior",
       picture: "heena.jpg",
+    },
+    {
+      name: "Razan Mansour",
+      position: "Director of Finance",
+      major: "Informatics - Senior",
+      picture: "razan.jpg",
     },
     {
       name: "Minnah Tazmeen",
@@ -59,6 +59,7 @@ export default function About() {
     <section>
       <img src="/team-image.png" className={styles.teamPicture} />
       <div className={styles.how}>
+        <img className={styles.beganStar} src="/smoothcorner.png" />
         <h1>How It All Began?</h1>
       </div>
       <div className={styles.beganContainer}></div>
@@ -71,7 +72,10 @@ export default function About() {
           src="/smoothcorner.png"
           className={"star " + styles.starBotRight}
         ></img>
-        <h1>Meet Our Board</h1>
+        <h1 className={styles.boardText}>
+          Meet Our <br />
+          Board
+        </h1>
       </div>
       <div className={styles.boardGrid}>
         {boardMembers.map((member, index) => {

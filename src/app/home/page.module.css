@@ -79,6 +79,15 @@
     align-items: center;
 }
 
+.eventsHeading {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    height: 77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .eventsContainer {
     width: 100%;
     padding: 50px 0 40px 0;
@@ -110,13 +119,17 @@
     color: #6a3d9b;
 }
 
-
-.starTopLeft {
+.whoStarTopLeft {
     bottom: 35px;
     left: 10px;
 }
 
-.starBotRight {
-    top: 40px;
-    right: 10px;
+.eventsStarTopLeft {
+    bottom: 35px;
+    left: 2px;
+}
+
+.eventsStarTopRight {
+    bottom: 35px;
+    right: 2px;
 }

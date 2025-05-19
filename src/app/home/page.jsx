@@ -20,7 +20,7 @@ export default function Home() {
             <div className={styles.homeContent}>
                 <div className={styles.who}>
                     <div className={styles.whoHeading}>
-                        <img src="/star.png" className={'star ' + styles.starTopLeft}></img>
+                        <img src="/star.png" className={'star ' + styles.whoStarTopLeft}></img>
                         <h1 className={styles.header}>Who are we?</h1>
                     </div>
                     <div className={styles.whoBody}>
@@ -37,8 +37,10 @@ export default function Home() {
                 </div>
 
                 <div className={styles.events}>
-                    <div>
+                    <div className={styles.eventsHeading}>
+                        <img src="/star.png" className={'star ' + styles.eventsStarTopLeft}></img>
                         <h1 className={styles.header}>Upcoming Events</h1>
+                        <img src="/star.png" className={'star ' + styles.eventsStarTopRight}></img>
                     </div>
                     <div className={styles.eventsContainer}>
                         {events.map((obj, i) => {

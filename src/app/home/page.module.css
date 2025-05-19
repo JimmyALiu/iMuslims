@@ -67,10 +67,14 @@
     margin: auto;
 }
 
-.whoFooter a p {
+.link {
     font-family: Gotu, 'sans-serif';
     font-size: 18px;
     font-weight: 300;
+}
+
+.whoFooter a p {
+    text-align: right;
 }
 
 .events {
@@ -88,6 +92,10 @@
     align-items: center;
 }
 
+.eventsLink {
+
+}
+
 .eventsContainer {
     width: 100%;
     padding: 50px 0 40px 0;
@@ -96,27 +104,6 @@
     flex-wrap: wrap;
     gap: 5%;
     justify-content: center;
-}
-
-.eventsFooter {
-    min-width: 1024px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    text-align: right;
-}
-
-.eventsFooter p {
-    padding-right: 11%;
-}
-
-.whoFooter p,
-.eventsFooter p {
-    font-family: "Oswald" sans-serif;
-    text-align: right;
-    font-size: 18px;
-    font-weight: 600;
-    color: #6a3d9b;
 }
 
 .whoStarTopLeft {

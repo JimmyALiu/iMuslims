@@ -7,11 +7,11 @@ export default function Home() {
     // these will be rendered into calendar events
     // edit or add to this array to change the events
     const events = [
-        {eventName: "Event 1", description: "~Description~", date: "1/19/25", time: "3:00am", location: "CSE2 303" },
-        {eventName: "Event 2", description: "A short description", date: "really long date", time: "6:00pm", location: "ECE 101" },
-        {eventName: "Event 3", description: "A long long long long long long long long long long long long long description with scrollbar", date: "5/19/25", time: "7:30pm", location: "SAV 123" },
-        {eventName: "Event 4", description: "A long long long long long long long long long long long long long description with scrollbar", date: "5/19/25", time: "7:30pm", location: "SAV 123" },
-        {eventName: "Event 5", description: "A long long long long long long long long long long long long long description with scrollbar", date: "5/19/25", time: "7:30pm", location: "SAV 123" },
+        { eventName: "Event 1", description: "~Description~", date: "1/19/25", time: "3:00am", location: "CSE2 303" },
+        { eventName: "Event 2", description: "A short description", date: "really long date", time: "6:00pm", location: "ECE 101" },
+        { eventName: "Event 3", description: "A long long long long long long long long long long long long long description with scrollbar", date: "5/19/25", time: "7:30pm", location: "SAV 123" },
+        { eventName: "Event 4", description: "A long long long long long long long long long long long long long description with scrollbar", date: "5/19/25", time: "7:30pm", location: "SAV 123" },
+        { eventName: "Event 5", description: "A long long long long long long long long long long long long long description with scrollbar", date: "5/19/25", time: "7:30pm", location: "SAV 123" },
     ]
 
     return (
@@ -33,7 +33,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className={styles.whoFooter}>
-                    <Link href='/about'><p>Learn More About Us!</p></Link>
+                    <Link href='/about'><p className={styles.link}>Learn More About Us!</p></Link>
                 </div>
 
                 <div className={styles.events}>
@@ -41,6 +41,9 @@ export default function Home() {
                         <img src="/star.png" className={'star ' + styles.eventsStarTopLeft}></img>
                         <h1 className={styles.header}>Upcoming Events</h1>
                         <img src="/star.png" className={'star ' + styles.eventsStarTopRight}></img>
+                    </div>
+                    <div className={styles.eventsLink}>
+                        <Link href='/events'><p className={styles.link}>View All Events</p></Link>
                     </div>
                     <div className={styles.eventsContainer}>
                         {events.map((obj, i) => {
@@ -53,10 +56,6 @@ export default function Home() {
                                 location={obj.location}
                             ></CalendarEvent>
                         })}
-                    </div>
-                    <div className={styles.eventsFooter}>
-                        {/* TODO Add a link to Events page once routing is set up */}
-                        <p>View Full Calendar</p>
                     </div>
                 </div>
             </div>

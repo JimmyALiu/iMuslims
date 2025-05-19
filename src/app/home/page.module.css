@@ -80,7 +80,7 @@
 
 .eventsContainer {
     display: flex;
-    gap: 5vw;
+    gap: 5%;
     justify-content: center;
 }
 

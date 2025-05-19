@@ -1,13 +1,7 @@
 .calendarContainer {
     background-color: #784390;
-    width: 375px;
-    height: 375px;
-    width: 25vw;
-    height: 25vw;
-    min-width: 300px;
-    min-height: 300px;
-    max-width: 400px;
-    max-height: 400px;
+    width: clamp(300px, 25vw, 400px);
+    height: clamp(300px, 25vw, 400px);
     border: solid 5px #784390;
     border-radius: 20px;
 }

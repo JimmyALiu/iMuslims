@@ -1,8 +1,17 @@
 import styles from './page.module.css';
 import React from 'react'
 import Link from 'next/link'
+import CalendarEvent from '../../components/CalendarEvent';
 
 export default function Home() {
+    // these will be rendered into calendar events
+    // edit or add to this array to change the events
+    const events = [
+        {eventName: "Event 1", description: "~Desciprtion~", date: "", time: "", location: "" },
+        {eventName: "Event 2", description: "A short description", date: "", time: "", location: "" },
+        {eventName: "Event 3", description: "A long long long long long long long long long long long long long long long long long long long long description", date: "", time: "", location: "" },
+    ]
+
     return (
         <section className={styles.home}>
             <img src="/home-banner.png" className={styles.banner}></img>
@@ -28,33 +37,16 @@ export default function Home() {
                 <div className={styles.events}>
                     <h1>Upcoming Events</h1>
                     <div className={styles.eventsContainer}>
-                        <div className="container">
-                            <h2>Kick off Meeting!</h2>
-                            <div className={styles.textContainer}>
-                                <p>What?</p>
-                                <p>When?</p>
-                                <p>Where?</p>
-                            </div>
-                        </div>
-
-                        <div className="container">
-                            <h2>Binfo Iftar</h2>
-                            <div className={styles.textContainer}>
-                                <p>What?</p>
-                                <p>When?</p>
-                                <p>Where?</p>
-                            </div>
-                        </div>
-
-                        <div className="container">
-                            <h2>Panel</h2>
-                            <div className={styles.textContainer}>
-                                <p>What?</p>
-                                <p>When?</p>
-                                <p>Where?</p>
-                            </div>
-                        </div>
-
+                        {events.map((obj, i) => {
+                            return <CalendarEvent
+                                key={i}
+                                eventName={obj.eventName}
+                                description={obj.description}
+                                date={obj.date}
+                                time={obj.time}
+                                location={obj.location}
+                            ></CalendarEvent>
+                        })}
                     </div>
                     <div className={styles.eventsFooter}>
                         {/* TODO Add a link to Events page once routing is set up */}

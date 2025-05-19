@@ -2,13 +2,19 @@ import styles from './CalendarEvent.module.css'
 import React from 'react'
 
 export default function CalendarEvent(props) {
-    const { eventName, date, description } = props;
+    const { eventName, description, date, time, location } = props;
     return (
         <div className={styles.calendarContainer}>
-            <div>
-                <h3>{eventName}</h3>
-                <p>{date}</p>
-                <p>{description}</p>
+            <div className={styles.eventNameContainer}>
+                <h3 className={styles.eventName}>{eventName}</h3>
+            </div>
+            <div className={styles.eventInfoContainer}>
+                <p className={styles.description}>{description}</p>
+                <div>
+                    <p>Date: {date}</p>
+                    <p>Time: {time}</p>
+                    <p>Location: {location}</p>
+                </div>
             </div>
         </div>
     )

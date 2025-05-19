@@ -21,7 +21,7 @@ export default function Home() {
                 <div className={styles.who}>
                     <div className={styles.whoHeading}>
                         <img src="/star.png" className={'star ' + styles.starTopLeft}></img>
-                        <h1>Who are we?</h1>
+                        <h1 className={styles.header}>Who are we?</h1>
                     </div>
                     <div className={styles.whoBody}>
                         <p>
@@ -37,7 +37,9 @@ export default function Home() {
                 </div>
 
                 <div className={styles.events}>
-                    <h1>Upcoming Events</h1>
+                    <div>
+                        <h1 className={styles.header}>Upcoming Events</h1>
+                    </div>
                     <div className={styles.eventsContainer}>
                         {events.map((obj, i) => {
                             return <CalendarEvent

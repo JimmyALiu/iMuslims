@@ -84,34 +84,6 @@
     justify-content: center;
 }
 
-.eventsContainer .container {
-    width: 24%;
-}
-
-.eventsContainer .container h2 {
-    width: 88%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 32px;
-}
-
-.eventsContainer .container .textContainer {
-    width: 78%;
-    margin-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-}
-
-.eventsContainer .container .textContainer p {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 30px;
-    font-style: italic;
-}
-
 .eventsFooter {
     min-width: 1024px;
     margin: auto;

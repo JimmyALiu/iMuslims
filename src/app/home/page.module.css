@@ -92,8 +92,8 @@
     align-items: center;
 }
 
-.eventsLink {
-
+.eventsLink a p {
+    margin: 0;
 }
 
 .eventsContainer {

@@ -9,7 +9,9 @@ export default function Home() {
     const events = [
         {eventName: "Event 1", description: "~Description~", date: "1/19/25", time: "3:00am", location: "CSE2 303" },
         {eventName: "Event 2", description: "A short description", date: "really long date", time: "6:00pm", location: "ECE 101" },
-        {eventName: "Event 3", description: "A long long long long long long long long long long long long long long long long long long long long description", date: "5/19/25", time: "7:30pm", location: "SAV 123" },
+        {eventName: "Event 3", description: "A long long long long long long long long long long long long long description with scrollbar", date: "5/19/25", time: "7:30pm", location: "SAV 123" },
+        {eventName: "Event 4", description: "A long long long long long long long long long long long long long description with scrollbar", date: "5/19/25", time: "7:30pm", location: "SAV 123" },
+        {eventName: "Event 5", description: "A long long long long long long long long long long long long long description with scrollbar", date: "5/19/25", time: "7:30pm", location: "SAV 123" },
     ]
 
     return (

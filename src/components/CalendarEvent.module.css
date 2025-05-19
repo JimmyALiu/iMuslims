@@ -5,6 +5,7 @@
     height: clamp(300px, 25vw, 400px);
     border: solid 5px #784390;
     border-radius: 20px;
+    margin: 50px 0 50px 0;
 }
 
 .eventNameContainer {

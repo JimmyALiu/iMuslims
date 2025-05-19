@@ -1,7 +1,13 @@
 .calendarContainer {
     background-color: #784390;
-    width: 335px;
-    height: 335px;
+    width: 375px;
+    height: 375px;
+    width: 25vw;
+    height: 25vw;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 400px;
+    max-height: 400px;
     border: solid 5px #784390;
     border-radius: 20px;
 }
@@ -24,11 +30,25 @@
     width: 100%;
     height: 59%;
     background-color: white;
-    padding: 1em;
+    padding: 1em 1em 0.5em 1em;
     box-sizing: border-box;
     border-radius: 0px 0px 12px 12px;
 }
 
-.description {
-    
+.eventDescription {
+    font-family: Gotu, sans-serif;
+    font-size: 24px;
+    color: #3D1E6B;
+    margin: 0;
+}
+
+.eventInfo {
+    font-family: Gotu, sans-serif;
+    font-size: 22px;
+    color: #3D1E6B;
+    margin-top: 0.5em;
+}
+
+.eventInfo p {
+    margin: 0 0 0.2em 1em;
 }

@@ -9,8 +9,8 @@ export default function CalendarEvent(props) {
                 <h3 className={styles.eventName}>{eventName}</h3>
             </div>
             <div className={styles.eventInfoContainer}>
-                <p className={styles.description}>{description}</p>
-                <div>
+                <p className={styles.eventDescription}>{description}</p>
+                <div className={styles.eventInfo}>
                     <p>Date: {date}</p>
                     <p>Time: {time}</p>
                     <p>Location: {location}</p>

@@ -28,6 +28,7 @@
   margin-top: 0px;
   font-family: "Aboreto";
   color: #8666c2;
+  -webkit-text-stroke: 0.1px #3d1e6b;
 }
 
 .boardHeaderContainer {
@@ -39,6 +40,7 @@
 .boardText {
   color: #8666c2;
   font-family: "Aboreto";
+  -webkit-text-stroke: 0.1px #3d1e6b;
 }
 
 .beganContainer {

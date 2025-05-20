@@ -3,7 +3,7 @@
   height: 100%;
   object-fit: cover;
   object-position: top;
-  border-radius: 20px;
+  border-radius: 16px;
 }
 .pictureContainer {
   background-color: #d9d9d9;
@@ -13,7 +13,7 @@
   justify-content: flex-end;
   width: 317px;
   height: 470px;
-  border-radius: 20px;
+  border-radius: 16px;
   border: 3px solid #8666c2;
 }
 
@@ -22,8 +22,8 @@
   height: 130px;
   width: 100%;
   text-align: center;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   background-color: rgba(134, 102, 194, 0.7);
 }
 

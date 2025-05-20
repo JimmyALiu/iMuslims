@@ -1,76 +1,94 @@
-import styles from './page.module.css';
+import styles from "./page.module.css";
 import React from "react";
+import ProfileCard from "../../components/ProfileCard";
 
 export default function About() {
+  //object array for board members
+  const boardMembers = [
+    {
+      name: "Zareen Tasmin",
+      position: "Co-President",
+      major: "Informatics - Senior",
+      picture: "zareen.jpg",
+    },
+    {
+      name: "Safa Jamal",
+      position: "Co-President",
+      major: "Informatics - Senior",
+      picture: "safa.jpg",
+    },
+    {
+      name: "Heena Vahora",
+      position: "Director of Diversity Outreach",
+      major: "Informatics - Senior",
+      picture: "heena.jpg",
+    },
+    {
+      name: "Razan Mansour",
+      position: "Director of Finance",
+      major: "Informatics - Senior",
+      picture: "razan.jpg",
+    },
+    {
+      name: "Minnah Tazmeen",
+      position: "Creative Director",
+      major: "Informatics - Senior",
+      picture: "minnah.jpg",
+    },
+    {
+      name: "Zakiyah Farooque",
+      position: "Director of Organizational Affairs",
+      major: "Informatics - Senior",
+      picture: "zakiyah.jpg",
+    },
+    {
+      name: "Faiza Imran",
+      position: "Director of Professional Outreach",
+      major: "Informatics - Senior",
+      picture: "faiza.jpg",
+    },
+    {
+      name: "Sarah Ghamadsi",
+      position: "Director of PR",
+      major: "Informatics - Senior",
+      picture: "sarah.png",
+    },
+  ];
+
   return (
     <section>
       <img src="/team-image.png" className={styles.teamPicture} />
       <div className={styles.how}>
+        <img className={styles.beganStar} src="/smoothcorner.png" />
         <h1>How It All Began?</h1>
       </div>
       <div className={styles.beganContainer}></div>
       <div className={styles.boardHeaderContainer}>
-        <img src="/smoothcorner.png" className={"star " + styles.starTopLeft}></img>
-        <img src="/smoothcorner.png" className={"star " + styles.starBotRight}></img>
-        <h1>Meet Our Board</h1>
+        <img
+          src="/smoothcorner.png"
+          className={"star " + styles.starTopLeft}
+        ></img>
+        <img
+          src="/smoothcorner.png"
+          className={"star " + styles.starBotRight}
+        ></img>
+        <h1 className={styles.boardText}>
+          Meet Our <br />
+          Board
+        </h1>
       </div>
       <div className={styles.boardGrid}>
-        <div className={styles.boardCard}>
-          <div>
-            <h2>Zareen Tasmin</h2>
-            <h3>Co-President</h3>
-            <h3>Informatics - Senior</h3>
-          </div>
-        </div>
-        <div className={styles.boardCard}>
-          <div>
-            <h2>Safa Jamal</h2>
-            <h3>Co-President</h3>
-            <h3>Informatics - Senior</h3>
-          </div>
-        </div>
-        <div className={styles.boardCard}>
-          <div>
-            <h2>Heena Vahora</h2>
-            <h3>Director of Diverstiy Outreach</h3>
-            <h3>Informatics - Senior</h3>
-          </div>
-        </div>
-        <div className={styles.boardCard}>
-          <div>
-            <h2>Razan Mansour</h2>
-            <h3>Director of Finance</h3>
-            <h3>Informatics - Senior</h3>
-          </div>
-        </div>
-        <div className={styles.boardCard}>
-          <div>
-            <h2>Minnah Tazmeen</h2>
-            <h3>Creative Director</h3>
-            <h3>Informatics - Senior</h3>
-          </div>
-        </div>
-        <div className={styles.boardCard}>
-          <div>
-            <h2>Zakiyah Farooque</h2>
-            <h3>Director of Organizational Affairs</h3>
-            <h3>Informatics - Senior</h3>
-          </div>
-        </div>
-        <div className={styles.boardCard}>
-          <div>
-            <h2>Faiza Imran</h2>
-            <h3>Director of Professional Outreach</h3>
-            <h3>Informatics - Senior</h3>
-          </div>
-        </div>
-        <div className={styles.boardCard}>
-          <div>
-            <h2>Sarah Ghamadsi</h2>
-            <h3>Director of PR</h3>
-            <h3>Informatics - Senior</h3>
-          </div>
-        </div>
+        {boardMembers.map((member, index) => {
+          return (
+            <ProfileCard
+              key={index}
+              name={member.name}
+              position={member.position}
+              major={member.major}
+              picture={member.picture}
+            />
+          );
+        })}
       </div>
     </section>
   );

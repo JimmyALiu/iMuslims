@@ -16,18 +16,18 @@ export default function Footer() {
                 <div className={styles.linkCol}>
                     <h3>Resources</h3>
                     <div>
-                        <p>Prayer Times</p>
-                        <p>Campus Prayer Spaces</p>
+                        <Link href="https://msauw.org/#section2" target="_blank"><p>Prayer Times</p></Link>
+                        <Link href="https://msauw.org/#section2" target="_blank"><p>Campus Prayer Spaces</p></Link>
                     </div>
                 </div>
 
                 <div className={styles.linkCol}>
                     <h3>Quick Links</h3>
                     <div>
-                        <p>Upcoming Events</p>
-                        <p>Past Events</p>
-                        <p>Our Board</p>
-                        <p>Membership Form</p>
+                        <Link href="/events"><p>Upcoming Events</p></Link>
+                        <Link href="/events"><p>Past Events</p></Link>
+                        <Link href="/about"><p>Our Board</p></Link>
+                        <Link href="/connect"><p>Membership Form</p></Link>
                     </div>
                 </div>
 

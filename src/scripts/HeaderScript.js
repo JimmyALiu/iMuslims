@@ -27,7 +27,7 @@ export function navBtnChangeOnHover() {
     const navBtns = document.querySelectorAll("nav a");
 
     navBtns.forEach((element) => {
-        element.style.color = hoverTextColor;
+        element.style.color = textColor;
         element.style.textShadow = "-0.5px -0.1px 0.8px " + textColor;
 
         element.addEventListener("mouseover", (e) => {

@@ -4,22 +4,29 @@
 
 import styles from './Header.module.css';
 import React from 'react';
-import { useState } from 'react';
-import Navbar from './Navbar'
-import Link from 'next/link'
+import { useEffect } from 'react';
+import Navbar from './Navbar';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { headerChangeOnScroll, navBtnChangeOnHover, selectNavBtn } from '../scripts/HeaderScript';
 
-
-'../components/Navbar';
 
 export default function Header() {
-    // will either be in the state: 'home', 'events', 'about', or 'connect'
-    const [page, setPage] = useState('home');
+    const pathname = usePathname();
+    useEffect(() => {
+        selectNavBtn(pathname);
+    }, [pathname]);
+
+    // attach the header bg color script
+    useEffect(() => {
+        headerChangeOnScroll();
+        navBtnChangeOnHover();
+    }, []);
 
     return (
         <header className={styles.header}>
-            <Link className={styles.logoContainer} onClick={() => setPage('home')} href='/home'><img src='/imuslims-logo.png' className={styles.logo} alt='imuslims logo' /></Link>
-            {/* <img src='/imuslims-logo.png' className={styles.logo} alt='imuslims logo' /> */}
-            <Navbar page={page} setPage={setPage} />
+            <Link className={styles.logoContainer} href='/home'><img src='/imuslims-logo-transparent.png' className={styles.logo} alt='imuslims logo' /></Link>
+            <Navbar />
         </header>
     )
 }

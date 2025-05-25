@@ -1,5 +1,6 @@
 .header {
     font-family: "Oswald", sans-serif;
+    background-color: #fffcf7;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,11 +9,16 @@
     height: 80px;
     overflow: hidden;
     box-sizing: border-box;
+    position: sticky;
+    top: 0px;
+    z-index: 50;
+    transition-duration: 250ms;
+    transition-delay: 30ms;
 }
 
 .logoContainer {
     height: 100%;
-    width: 175px;
+    width: 185px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,6 +26,7 @@
 
 .logo {
     aspect-ratio: auto;
-    height: 75%;
-    padding-bottom: 5px;
+    width: 75%;
+    padding-bottom: 10px;
+    padding-right: 10px;
 }

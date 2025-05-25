@@ -7,7 +7,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import Navbar from './Navbar'
 import Link from 'next/link'
-import { headerChangeOnScroll } from '../scripts/HeaderScript'
+import { headerChangeOnScroll, navBtnChangeOnHover } from '../scripts/HeaderScript'
 
 
 export default function Header() {
@@ -17,6 +17,7 @@ export default function Header() {
     // attach the header bg color script
     useEffect(() => {
         headerChangeOnScroll();
+        navBtnChangeOnHover();
     }, []);
 
     return (

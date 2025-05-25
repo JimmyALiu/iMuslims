@@ -1,14 +1,24 @@
+import styles from '../components/Navbar.module.css'
+
 let bgColor, textColor, hoverTextColor;
 
 export function headerChangeOnScroll() {
-    bgColor = "#fffcf7";
-    textColor = "#784390";
-    hoverTextColor = "#29104e";
+    // get the scroll position
+    let scrollPos = window.scrollY;
+    if (scrollPos > 5) {
+        bgColor = "#784390";
+        textColor = "#fffcf7";
+        hoverTextColor = "#ede6da";
+    } else {
+        bgColor = "#fffcf7";
+        textColor = "#784390";
+        hoverTextColor = "#29104e";
+    }
+    transitionHeader();
+    navBtnChangeOnHover();
 
     window.addEventListener("scroll", (e) => {
-        // get the scroll position
         let scrollPos = window.scrollY;
-
         if (scrollPos > 5) {
             bgColor = "#784390";
             textColor = "#fffcf7";
@@ -19,6 +29,7 @@ export function headerChangeOnScroll() {
             hoverTextColor = "#29104e";
         }
         transitionHeader();
+        navBtnChangeOnHover();
     })
 
 }
@@ -44,6 +55,38 @@ export function navBtnChangeOnHover() {
             clearInterval(interval);
         });
     });
+}
+
+/**
+ * pathname will be either:
+ * /home /events /about /connect
+ * default to home
+ */
+export function selectNavBtn(pathname) {
+    const navBtns = document.querySelectorAll("nav a");
+
+    // remove current selected
+    navBtns.forEach((element) => {
+        element.classList.remove(`${styles.selected}`);
+    });
+
+    let el;
+    switch (pathname) {
+        case "/events":
+            el = document.getElementById('events');
+            break;
+        case "/about":
+            el = document.getElementById('about');
+            break;
+        case "/connect":
+            el = document.getElementById('connect');
+            break;
+        default:
+            el = document.getElementById('home');
+
+    }
+
+    el.classList.add(`${styles.selected}`);
 }
 
 // helper functions

@@ -5,12 +5,18 @@
 import styles from './Header.module.css';
 import React from 'react';
 import { useEffect } from 'react';
-import Navbar from './Navbar'
-import Link from 'next/link'
-import { headerChangeOnScroll, navBtnChangeOnHover } from '../scripts/HeaderScript'
+import Navbar from './Navbar';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { headerChangeOnScroll, navBtnChangeOnHover, selectNavBtn } from '../scripts/HeaderScript';
 
 
 export default function Header() {
+    const pathname = usePathname();
+    useEffect(() => {
+        selectNavBtn(pathname);
+    }, [pathname]);
+
     // attach the header bg color script
     useEffect(() => {
         headerChangeOnScroll();

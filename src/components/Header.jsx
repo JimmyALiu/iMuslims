@@ -4,28 +4,24 @@
 
 import styles from './Header.module.css';
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import Navbar from './Navbar'
 import Link from 'next/link'
 import { headerChangeOnScroll, navBtnChangeOnHover } from '../scripts/HeaderScript'
 
 
 export default function Header() {
-    // will either be in the state: 'home', 'events', 'about', or 'connect'
-    const [page, setPage] = useState('home');
-
     // attach the header bg color script
     useEffect(() => {
         headerChangeOnScroll();
         navBtnChangeOnHover();
+        console.log("called");
     }, []);
 
     return (
         <header className={styles.header}>
-            <Link className={styles.logoContainer} onClick={() => setPage('home')} href='/home'><img src='/imuslims-logo-transparent.png' className={styles.logo} alt='imuslims logo' /></Link>
-            {/* <img src='/imuslims-logo.png' className={styles.logo} alt='imuslims logo' /> */}
-            <Navbar page={page} setPage={setPage} />
-
+            <Link className={styles.logoContainer} href='/home'><img src='/imuslims-logo-transparent.png' className={styles.logo} alt='imuslims logo' /></Link>
+            <Navbar />
         </header>
     )
 }

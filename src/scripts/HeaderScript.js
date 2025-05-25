@@ -1,8 +1,10 @@
-import styles from '../components/Navbar.module.css';
-
 let bgColor, textColor, hoverTextColor;
 
 export function headerChangeOnScroll() {
+    bgColor = "#fffcf7";
+    textColor = "#784390";
+    hoverTextColor = "#29104e";
+    
     window.addEventListener("scroll", (e) => {
         // get the scroll position
         let scrollPos = window.scrollY;
@@ -39,14 +41,9 @@ export function navBtnChangeOnHover() {
 function transitionHeader() {
     const headerEl = document.querySelector("header");
     const navBtns = document.querySelectorAll("nav a");
-    // issue, selected is scoped to navbar
-    // const selected = document.querySelectorAll(`.${styles.selected}`);
 
     headerEl.style.backgroundColor = bgColor;
     navBtns.forEach((element) => {
         element.style.color = textColor;
     });
-    // selected.forEach((element) => {
-    //     element.style.color = hoverTextColor
-    // })
 }

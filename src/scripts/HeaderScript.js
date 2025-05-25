@@ -24,20 +24,24 @@ export function headerChangeOnScroll() {
 }
 
 export function navBtnChangeOnHover() {
+    let interval;
     const navBtns = document.querySelectorAll("nav a");
 
     navBtns.forEach((element) => {
         element.style.color = textColor;
-        element.style.textShadow = "-0.5px -0.1px 0.8px " + textColor;
+        element.style.textShadow = "-0.5px -0.1px 0.8px " + hoverTextColor;
 
         element.addEventListener("mouseover", (e) => {
-            element.style.color = hoverTextColor;
-            element.style.textShadow = "-0.5px -0.1px 0.8px " + hoverTextColor;
+            interval = setInterval(() => {
+                element.style.color = hoverTextColor;
+                element.style.textShadow = "-0.5px -0.1px 0.8px " + hoverTextColor;
+            }, 100)
         });
 
         element.addEventListener("mouseleave", (e) => {
             element.style.color = textColor;
-            element.style.textShadow = "-0.5px -0.1px 0.8px " + textColor;
+            element.style.textShadow = "-0.5px -0.1px 0.8px " + hoverTextColor;
+            clearInterval(interval);
         });
     });
 }

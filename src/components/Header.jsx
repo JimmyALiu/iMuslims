@@ -15,7 +15,6 @@ export default function Header() {
     useEffect(() => {
         headerChangeOnScroll();
         navBtnChangeOnHover();
-        console.log("called");
     }, []);
 
     return (

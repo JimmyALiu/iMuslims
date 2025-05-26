@@ -99,6 +99,11 @@
     color: #464a4e;
   }
 
+  .arrows img{
+    height: 1.5vh;
+    width: 1.5vw;
+  }
+
 
   .pastEvents{
     margin-left: 20vw;

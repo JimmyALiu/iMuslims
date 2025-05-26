@@ -103,7 +103,6 @@ function transitionHeader() {
 
     // change logo
     const logos = document.querySelectorAll(".logo");
-    console.log(logos);
     logos.forEach((element) => {  // remove the none class
         element.classList.remove(`${headerStyles.none}`);
     })

@@ -64,7 +64,7 @@
   grid-template-rows: 1fr 1fr;
   gap: 140px 90px;
   width: clamp(1024px, 80%, 1600px);
-  margin-bottom: 300px;
+  margin-bottom: 180px;
   margin-left: auto;
   margin-right: auto;
 }

@@ -7,11 +7,11 @@ export default function Home() {
     // these will be rendered into calendar events
     // edit or add to this array to change the events
     const events = [
-        { eventName: "Event 1", description: "~Description~", date: "1/19/25", time: "3:00am", location: "CSE2 303" },
+        { eventName: "Event Name", description: "~Description~", date: "1/19/25", time: "3:00am", location: "CSE2 303" },
         { eventName: "Event 2", description: "A short description", date: "really long date", time: "6:00pm", location: "ECE 101" },
         { eventName: "Event 3", description: "A long long long long long long long long long long long long long description with scrollbar", date: "5/19/25", time: "7:30pm", location: "SAV 123" },
-        { eventName: "Event 4", description: "A long long long long long long long long long long long long long description with scrollbar", date: "5/19/25", time: "7:30pm", location: "SAV 123" },
-        { eventName: "Event 5", description: "A long long long long long long long long long long long long long description with scrollbar", date: "5/19/25", time: "7:30pm", location: "SAV 123" },
+        { eventName: "Event 4", description: "A short description for an overflow event", date: "6/19/25", time: "4:30pm", location: "KNE 130" },
+        { eventName: "A Long Event Name", description: "A long long long long long long long long long long long long long description with scrollbar", date: "5/19/25", time: "7:30pm", location: "SAV 123" },
     ]
 
     return (

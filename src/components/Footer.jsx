@@ -8,7 +8,7 @@ export default function Footer() {
             <div className={styles.footerInfo}>
                 <div className={styles.logoCol}>
                     <div className={styles.crop}>
-                        <img src='/imuslims-logo-transparent.png' className={styles.footerLogo} alt='imuslims logo' />
+                        <img src='/imuslims-white-logo-transparent.png' className={styles.footerLogo} alt='imuslims logo' />
                     </div>
                     <p>Empowering Muslim students to lead, connect, and thrive.</p>
                 </div>
@@ -16,18 +16,18 @@ export default function Footer() {
                 <div className={styles.linkCol}>
                     <h3>Resources</h3>
                     <div>
-                        <p>Prayer Times</p>
-                        <p>Campus Prayer Spaces</p>
+                        <Link href="https://msauw.org/#section2" target="_blank"><p>Prayer Times</p></Link>
+                        <Link href="https://msauw.org/#section2" target="_blank"><p>Campus Prayer Spaces</p></Link>
                     </div>
                 </div>
 
                 <div className={styles.linkCol}>
                     <h3>Quick Links</h3>
                     <div>
-                        <p>Upcoming Events</p>
-                        <p>Past Events</p>
-                        <p>Our Board</p>
-                        <p>Membership Form</p>
+                        <Link href="/events"><p>Upcoming Events</p></Link>
+                        <Link href="/events"><p>Past Events</p></Link>
+                        <Link href="/about"><p>Our Board</p></Link>
+                        <Link href="/connect"><p>Membership Form</p></Link>
                     </div>
                 </div>
 
@@ -36,7 +36,7 @@ export default function Footer() {
                     <div>
                         <div className={styles.email}>
                             <i className="fa-regular fa-envelope"></i>
-                            <p>contact@company.com</p>
+                            <p>imuslims@uw.edu</p>
                         </div>
                         <div className={styles.socials}>
                             <Link href='https://www.instagram.com/imuslims.uw/'><i className={"fa-brands fa-instagram " + styles.instagram}></i></Link>

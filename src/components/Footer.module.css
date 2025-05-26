@@ -8,6 +8,7 @@
     padding-top: 25px;
     padding-left: 50px;
     padding-right: 50px;
+    box-sizing: border-box;
 }
 
 .footerInfo {
@@ -27,6 +28,7 @@
     font-weight: 300;
     padding-left: 30px;
     padding-right: 30px;
+    margin-top: 8px;
 }
 
 .crop {
@@ -108,4 +110,9 @@
     font-size: 18px;
     margin-top: 10px;
     font-weight: 300;
+}
+
+.linkCol a {
+    text-decoration: none;
+    color: white;
 }

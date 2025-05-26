@@ -18,16 +18,16 @@ export default function About() {
       picture: "safa.jpg",
     },
     {
-      name: "Heena Vahora",
-      position: "Director of Diversity Outreach",
-      major: "Informatics - Senior",
-      picture: "heena.jpg",
-    },
-    {
       name: "Razan Mansour",
       position: "Director of Finance",
       major: "Informatics - Senior",
       picture: "razan.jpg",
+    },
+    {
+      name: "Heena Vahora",
+      position: "Director of Diversity Outreach",
+      major: "Informatics - Senior",
+      picture: "heena.jpg",
     },
     {
       name: "Minnah Tazmeen",

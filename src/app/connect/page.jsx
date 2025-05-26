@@ -17,8 +17,8 @@ export default function Connect() {
                 </div>
             </div>
             <div>
-                <div className={styles.memberContainer}>
-                    <div className={styles.memberHeader}>
+                <div className={styles.container}>
+                    <div className={styles.header}>
                         <img src="/star.png" className={'star ' + styles.eventsStarTopLeft}></img>
                         <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdkvk3rhyuLiNZaOcl3-RcKfBfSGm5n1rK1O29jJkYBXZcLAw/viewform"><h1>Become a Member?</h1></Link>
                         <img src="/star.png" className={'star ' + styles.eventsStarTopRight}></img>
@@ -28,8 +28,9 @@ export default function Connect() {
                         <p>Want to stay in the loop on events and opportunities? Fill out the form to become a member!</p>
                     </div>
                 </div>
-                <div className={styles.memberContainer}>
-                    <div className={styles.memberHeader}>
+                <div className={styles.container}>
+                    <div className={styles.header}>
+                        
                         <h1>Our Partners:</h1>
                     </div>
                     <div className={styles.partnerContent}>

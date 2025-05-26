@@ -80,7 +80,7 @@ export default function Events() {
             <div className={styles.pastEventTitle}>
               <h1><img src="/star.png" className={'star ' + styles.starTopLeft}></img>Past Events</h1>
             </div>
-            <div className={styles.pastEvents}>
+            <div className={styles.pastEvents} >
               {pastEvents.map((item, index) => (
                   <img className={styles.pastEventImage} src={item.imageUrl} key={index}></img>
               ))}

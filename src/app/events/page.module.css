@@ -157,3 +157,8 @@
 }
 
 
+.eventsBanner, .purpleBackground,
+.eventTitle, .eventList,
+.pastEventTitle, .pastEvents {
+  min-width: 1024px;
+}

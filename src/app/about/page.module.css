@@ -95,3 +95,8 @@
   color: #3d1e6b;
   text-align: center;
 }
+
+
+.teamPicture {
+  min-width: 1024px;
+}

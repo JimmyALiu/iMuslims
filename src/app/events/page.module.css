@@ -30,7 +30,7 @@
 
     /* document will not allocate any space for the h1, will be relative to parent */
     position: absolute;
-    margin-bottom:  40vh;
+    margin-bottom:  38vh;
     align-items: center;
     text-align: center;
 }

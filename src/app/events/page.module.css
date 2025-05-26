@@ -45,9 +45,11 @@
     font-weight: bold;
 }
 
-.pastEventTitle{
+.pastEventTitle h1{
+    font-family: 'Aboreto';
     margin-left:20vw;
-    margin-top:15vh;
+    margin-top: 10vh;
+    font-weight: bold;
 }
 
 .eventList {
@@ -78,19 +80,41 @@
     font-weight: bold;
     cursor: pointer;
     display: flex;
+    padding-bottom: 1.5vh;
+    padding-left: 0.1vw;
     justify-content: space-between;
     align-items: center;
   }
   
   
   /* this is broken below  */
+
+  .eventWrapper{
+    display:none;
+  }
+
   .eventDetails {
-    font-size: 5rem;
+    font-size: 1rem;
+    margin-top: 1vh;
+    margin-left: 0.1vw;
     color: #464a4e;
-    display: none;
+  }
+
+  .pastEvents{
+    margin-left: 20vw;
+    overflow: auto;
+    white-space: nowrap;
+    margin-right: 20vw;
+    margin-bottom: 7vh;
   }
   
-  .eventDetails.show {
+  .pastEventImage{
+    height: 48vh;
+    width: 20vw;
+    padding: 2vmin;
+  }
+  
+  .eventWrapper.show {
     display: block;
   }
 
@@ -101,9 +125,9 @@
     position: relative;
   }
 
-    .starTopLeft {
-        bottom: 20px;
-        margin-left:  -60px;
-    }
+.starTopLeft {
+    bottom: 15px;
+    margin-left:  -60px;
+}
 
 

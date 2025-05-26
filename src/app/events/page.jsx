@@ -25,6 +25,27 @@ export default function Events() {
     }
   ];
 
+  const pastEvents = [
+    {
+      imageUrl:"/pastEvents/pastEvent1.png"
+    },
+    {
+      imageUrl:"/pastEvents/pastEvent2.png"
+    },
+    {
+      imageUrl:"/pastEvents/pastEvent3.png"
+    },
+    {
+      imageUrl:"/pastEvents/pastEvent1.png"
+    },
+    {
+      imageUrl:"/pastEvents/pastEvent2.png"
+    },
+    {
+      imageUrl:"/pastEvents/pastEvent3.png"
+    },
+  ];
+
     return (
         <div className={styles.eventsWrapper.pageMinWidth}>
             <div className={styles.eventsBanner}>
@@ -42,12 +63,28 @@ export default function Events() {
                         {item.eventName}
                         <span>{activeIndex === index ? '^' : 'v'}</span>
                     </div>
-                    <div className={styles.eventDetails + `${activeIndex === index ? 'show' : ''}`}>
-                        {item.eventDetails}
+                    <div className={styles.eventWrapper + `${activeIndex === index ? 'show' : ''}`}>
+                      <div className ={styles.eventDetails}>
+                          {item.eventDetails}
+                      </div>
                     </div>
                 </div>
                 ))}
             </div>
+
+            <div className={styles.pastEventTitle}>
+              <h1><img src="/star.png" className={'star ' + styles.starTopLeft}></img>Past Events</h1>
+            </div>
+
+            <div className={styles.pastEvents}>
+              {pastEvents.map((item, index) => (
+                  <img className={styles.pastEventImage} src={item.imageUrl} key={index}></img>
+              ))}
+            </div>
+
+            
+
+            
 
         </div>
 

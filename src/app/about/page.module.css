@@ -64,7 +64,7 @@
   grid-template-rows: 1fr 1fr;
   gap: 140px 90px;
   width: clamp(1024px, 80%, 1600px);
-  margin-bottom: 300px;
+  margin-bottom: 180px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -94,4 +94,9 @@
   font-weight: 400;
   color: #3d1e6b;
   text-align: center;
+}
+
+
+.teamPicture {
+  min-width: 1024px;
 }

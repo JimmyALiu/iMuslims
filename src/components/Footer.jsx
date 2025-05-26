@@ -8,7 +8,7 @@ export default function Footer() {
             <div className={styles.footerInfo}>
                 <div className={styles.logoCol}>
                     <div className={styles.crop}>
-                        <img src='/imuslims-white-logo-transparent.png' className={styles.footerLogo} alt='imuslims logo' />
+                        <img src='/logos/imuslims-footer-logo.png' className={styles.footerLogo} alt='imuslims logo' />
                     </div>
                     <p>Empowering Muslim students to lead, connect, and thrive.</p>
                 </div>

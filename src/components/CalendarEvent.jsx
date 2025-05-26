@@ -5,8 +5,8 @@ export default function CalendarEvent(props) {
     const { eventName, description, date, time, location } = props;
     return (
         <div className={styles.calendarContainer}>
-            <img src="./calendar-ring.png" className={`${styles.calendarRing} ${styles.calendarRingLeft}`}></img>
-            <img src="./calendar-ring.png" className={`${styles.calendarRing} ${styles.calendarRingRight}`}></img>
+            <img src="/decorations/calendar-ring.png" className={`${styles.calendarRing} ${styles.calendarRingLeft}`}></img>
+            <img src="/decorations/calendar-ring.png" className={`${styles.calendarRing} ${styles.calendarRingRight}`}></img>
             <div className={styles.eventNameContainer}>
                 <h3 className={styles.eventName}>{eventName}</h3>
             </div>

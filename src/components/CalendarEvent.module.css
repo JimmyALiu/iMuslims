@@ -1,11 +1,13 @@
 .calendarContainer {
     position: relative;
     background-color: #784390;
-    width: clamp(300px, 25vw, 400px);
-    height: clamp(300px, 25vw, 400px);
+    min-width: 300px;
+    width: 20vw;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
     border: solid 5px #784390;
     border-radius: 20px;
-    margin: 50px 0 50px 0;
+    margin: 50px 0 25px 0;
 }
 
 .eventNameContainer {
@@ -13,6 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .eventName {

@@ -6,7 +6,7 @@ const ProfileCard = ({ name, position, major, picture }) => {
     <>
       <div className={styles.pictureContainer}>
         <img
-          src={picture}
+          src={`/boardProfiles/${picture}`}
           alt="headshot of member"
           className={styles.profileImage}
         />

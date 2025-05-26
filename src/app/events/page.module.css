@@ -129,6 +129,7 @@
 
 
   .pastEvents{
+    min-width: 80%;
     margin-left: 20vw;
     overflow: auto;
     white-space: nowrap;
@@ -157,3 +158,12 @@
 }
 
 
+.eventsBanner, .purpleBackground,
+.eventTitle, .eventList,
+.pastEventTitle {
+  min-width: 1024px;
+}
+
+.pastEvents {
+  min-width: 800px;
+}

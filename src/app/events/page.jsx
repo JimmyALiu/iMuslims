@@ -59,7 +59,7 @@ export default function Events() {
                 <h1 className={styles.pageMinWidth}>Join Us At Our Next Event?</h1>
             </div>
             <div className={styles.eventTitle}>
-            <h1> <img src="/star.png" className={'star ' + styles.starTopLeft}></img>Upcoming Events</h1>
+            <h1> <img src="/decorations/star.png" className={'star ' + styles.starTopLeft}></img>Upcoming Events</h1>
             </div>
             <div className={styles.eventList}>
                 {upcomingEventsData.map((item, index) => (
@@ -67,7 +67,7 @@ export default function Events() {
                     <div className={styles.eventName} onClick={() => handleToggle(index)}>
                         {item.eventName}
                         <div className ={styles.arrows}>
-                          <span><img src={activeIndex === index ? '/upArrow.png' : 'downArrow.png'}></img></span>
+                          <span><img src={`/decorations/${activeIndex === index ? 'upArrow.png' : 'downArrow.png'}`}></img></span>
                         </div>
                     </div>
                     <div className={styles.eventWrapper + `${activeIndex === index ? 'show' : ''}`}>
@@ -79,7 +79,7 @@ export default function Events() {
                 ))}
             </div>
             <div className={styles.pastEventTitle}>
-              <h1><img src="/star.png" className={'star ' + styles.starTopLeft}></img>Past Events</h1>
+              <h1><img src="/decorations/star.png" className={'star ' + styles.starTopLeft}></img>Past Events</h1>
             </div>
             <div className={styles.pastEvents} >
               {pastEvents.map((item, index) => (

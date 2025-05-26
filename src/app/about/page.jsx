@@ -18,16 +18,16 @@ export default function About() {
       picture: "safa.jpg",
     },
     {
-      name: "Heena Vahora",
-      position: "Director of Diversity Outreach",
-      major: "Informatics - Senior",
-      picture: "heena.jpg",
-    },
-    {
       name: "Razan Mansour",
       position: "Director of Finance",
       major: "Informatics - Senior",
       picture: "razan.jpg",
+    },
+    {
+      name: "Heena Vahora",
+      position: "Director of Diversity Outreach",
+      major: "Informatics - Senior",
+      picture: "heena.jpg",
     },
     {
       name: "Minnah Tazmeen",
@@ -57,19 +57,19 @@ export default function About() {
 
   return (
     <section>
-      <img src="/team-image.png" className={styles.teamPicture} />
+      <img src="/about-banner.png" className={styles.teamPicture} />
       <div className={styles.how}>
-        <img className={styles.beganStar} src="/smoothcorner.png" />
+        <img className={styles.beganStar} src="/decorations/star.png" />
         <h1>How It All Began?</h1>
       </div>
       <div className={styles.beganContainer}></div>
       <div className={styles.boardHeaderContainer}>
         <img
-          src="/smoothcorner.png"
+          src="/decorations/star.png"
           className={"star " + styles.starTopLeft}
         ></img>
         <img
-          src="/smoothcorner.png"
+          src="/decorations/star.png"
           className={"star " + styles.starBotRight}
         ></img>
         <h1 className={styles.boardText}>

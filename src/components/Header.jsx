@@ -25,7 +25,12 @@ export default function Header() {
 
     return (
         <header className={styles.header}>
-            <Link className={styles.logoContainer} href='/home'><img src='/imuslims-logo-transparent.png' className={styles.logo} alt='imuslims logo' /></Link>
+            <div className={styles.logoContainer}>
+                <Link className={styles.logoContainer} href='/home'>
+                    <img id="whiteLogo" src='/logos/imuslims-header-logo-white.png' className={`logo ${styles.logo} none`} alt='imuslims logo' />
+                    <img id="blackLogo" src='/logos/imuslims-header-logo-black.png' className={`logo ${styles.logo}`} alt='imuslims logo' />
+                </Link>
+            </div>
             <Navbar />
         </header>
     )

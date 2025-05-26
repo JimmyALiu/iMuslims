@@ -7,11 +7,11 @@ export default function Home() {
     // these will be rendered into calendar events
     // edit or add to this array to change the events
     const events = [
-        { eventName: "Event 1", description: "~Description~", date: "1/19/25", time: "3:00am", location: "CSE2 303" },
+        { eventName: "Event Name", description: "~Description~", date: "1/19/25", time: "3:00am", location: "CSE2 303" },
         { eventName: "Event 2", description: "A short description", date: "really long date", time: "6:00pm", location: "ECE 101" },
         { eventName: "Event 3", description: "A long long long long long long long long long long long long long description with scrollbar", date: "5/19/25", time: "7:30pm", location: "SAV 123" },
-        { eventName: "Event 4", description: "A long long long long long long long long long long long long long description with scrollbar", date: "5/19/25", time: "7:30pm", location: "SAV 123" },
-        { eventName: "Event 5", description: "A long long long long long long long long long long long long long description with scrollbar", date: "5/19/25", time: "7:30pm", location: "SAV 123" },
+        { eventName: "Event 4", description: "A short description for an overflow event", date: "6/19/25", time: "4:30pm", location: "KNE 130" },
+        { eventName: "A Long Event Name", description: "A long long long long long long long long long long long long long description with scrollbar", date: "5/19/25", time: "7:30pm", location: "SAV 123" },
     ]
 
     return (
@@ -20,7 +20,7 @@ export default function Home() {
             <div className={styles.homeContent}>
                 <div className={styles.who}>
                     <div className={styles.whoHeading}>
-                        <img src="/star.png" className={'star ' + styles.whoStarTopLeft}></img>
+                        <img src="/decorations/star.png" className={'star ' + styles.whoStarTopLeft}></img>
                         <h1 className={styles.header}>Who are we?</h1>
                     </div>
                     <div className={styles.whoBody}>
@@ -38,9 +38,9 @@ export default function Home() {
 
                 <div className={styles.events}>
                     <div className={styles.eventsHeading}>
-                        <img src="/star.png" className={'star ' + styles.eventsStarTopLeft}></img>
+                        <img src="/decorations/star.png" className={'star ' + styles.eventsStarTopLeft}></img>
                         <h1 className={styles.header}>Upcoming Events</h1>
-                        <img src="/star.png" className={'star ' + styles.eventsStarTopRight}></img>
+                        <img src="/decorations/star.png" className={'star ' + styles.eventsStarTopRight}></img>
                     </div>
                     <div className={styles.eventsLink}>
                         <Link href='/events'><p className={styles.link}>View All Events</p></Link>

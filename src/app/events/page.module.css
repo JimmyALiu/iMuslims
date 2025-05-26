@@ -108,6 +108,7 @@
     margin-bottom: 7vh;
   }
   
+  /* note that sizing is hard coded because the given event fliers were not the same size */
   .pastEventImage{
     height: 48vh;
     width: 20vw;

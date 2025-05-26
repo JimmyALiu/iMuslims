@@ -25,7 +25,8 @@ export default function Header() {
 
     return (
         <header className={styles.header}>
-            <Link className={styles.logoContainer} href='/home'><img src='/imuslims-logo-transparent.png' className={styles.logo} alt='imuslims logo' /></Link>
+            <Link className={styles.logoContainer} href='/home'><img src='./logos/imuslims-header-logo-black.png' className={styles.logo} alt='imuslims logo' /></Link>
+            {/* <Link className={styles.logoContainer} href='/home'><img src='./logos/imuslims-header-logo-white.png' className={styles.logo} alt='imuslims logo' /></Link> */}
             <Navbar />
         </header>
     )

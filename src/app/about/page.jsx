@@ -59,17 +59,17 @@ export default function About() {
     <section>
       <img src="/team-image.png" className={styles.teamPicture} />
       <div className={styles.how}>
-        <img className={styles.beganStar} src="/smoothcorner.png" />
+        <img className={styles.beganStar} src="./decorations/star.png" />
         <h1>How It All Began?</h1>
       </div>
       <div className={styles.beganContainer}></div>
       <div className={styles.boardHeaderContainer}>
         <img
-          src="/smoothcorner.png"
+          src="./decorations/star.png"
           className={"star " + styles.starTopLeft}
         ></img>
         <img
-          src="/smoothcorner.png"
+          src="./decorations/star.png"
           className={"star " + styles.starBotRight}
         ></img>
         <h1 className={styles.boardText}>

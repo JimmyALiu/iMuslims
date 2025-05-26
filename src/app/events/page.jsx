@@ -59,7 +59,7 @@ export default function Events() {
                 <h1 className={styles.pageMinWidth}>Join Us At Our Next Event?</h1>
             </div>
             <div className={styles.eventTitle}>
-            <h1> <img src="/star.png" className={'star ' + styles.starTopLeft}></img>Upcoming Events</h1>
+            <h1> <img src="./decorations/star.png" className={'star ' + styles.starTopLeft}></img>Upcoming Events</h1>
             </div>
             <div className={styles.eventList}>
                 {upcomingEventsData.map((item, index) => (
@@ -79,7 +79,7 @@ export default function Events() {
                 ))}
             </div>
             <div className={styles.pastEventTitle}>
-              <h1><img src="/star.png" className={'star ' + styles.starTopLeft}></img>Past Events</h1>
+              <h1><img src="./decorations/star.png" className={'star ' + styles.starTopLeft}></img>Past Events</h1>
             </div>
             <div className={styles.pastEvents} >
               {pastEvents.map((item, index) => (

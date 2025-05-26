@@ -67,7 +67,7 @@ export default function Events() {
                     <div className={styles.eventName} onClick={() => handleToggle(index)}>
                         {item.eventName}
                         <div className ={styles.arrows}>
-                          <span><img src={activeIndex === index ? '/upArrow.png' : 'downArrow.png'}></img></span>
+                          <span><img src={`./decorations/${activeIndex === index ? 'upArrow.png' : 'downArrow.png'}`}></img></span>
                         </div>
                     </div>
                     <div className={styles.eventWrapper + `${activeIndex === index ? 'show' : ''}`}>

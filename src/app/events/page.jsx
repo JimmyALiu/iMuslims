@@ -55,6 +55,7 @@ export default function Events() {
         <div className={styles.eventsWrapper.pageMinWidth}>
             <div className={styles.eventsBanner}>
                 <img src='/events_banner.png'></img>
+                <div className={styles.purpleBackground}></div>
                 <h1 className={styles.pageMinWidth}>Join Us At Our Next Event?</h1>
             </div>
             <div className={styles.eventTitle}>

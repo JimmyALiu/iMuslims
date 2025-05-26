@@ -28,7 +28,7 @@ export default function Events() {
     }
   ];
 
-  /* To add more past events create a new object and create the path to the object as the imageURL. 
+  /* To add more past events create a new object and create the path to the object as the "imageURL". 
   All events are dispalyed by default so delete ones that should not be seen. */
   const pastEvents = [
     {

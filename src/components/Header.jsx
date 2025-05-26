@@ -27,8 +27,8 @@ export default function Header() {
         <header className={styles.header}>
             <div className={styles.logoContainer}>
                 <Link className={styles.logoContainer} href='/home'>
-                    <img src='./logos/imuslims-header-logo-black.png' className={styles.logo} alt='imuslims logo' />
-                    <img src='./logos/imuslims-header-logo-white.png' className={styles.logo} alt='imuslims logo' />
+                    <img id="whiteLogo" src='./logos/imuslims-header-logo-white.png' className={`logo ${styles.logo} none`} alt='imuslims logo' />
+                    <img id="blackLogo" src='./logos/imuslims-header-logo-black.png' className={`logo ${styles.logo}`} alt='imuslims logo' />
                 </Link>
             </div>
             <Navbar />

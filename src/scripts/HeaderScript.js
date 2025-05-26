@@ -1,15 +1,19 @@
-import styles from '../components/Navbar.module.css'
+import headerStyles from '../components/Header.module.css';
+import navStyles from '../components/Navbar.module.css';
 
+let logo;  // logo to hide
 let bgColor, textColor, hoverTextColor;
 
 export function headerChangeOnScroll() {
     // get the scroll position
     let scrollPos = window.scrollY;
     if (scrollPos > 5) {
+        logo = "black";
         bgColor = "#784390";
         textColor = "#fffcf7";
         hoverTextColor = "#ede6da";
     } else {
+        logo = "white";
         bgColor = "#fffcf7";
         textColor = "#784390";
         hoverTextColor = "#29104e";
@@ -20,10 +24,12 @@ export function headerChangeOnScroll() {
     window.addEventListener("scroll", (e) => {
         let scrollPos = window.scrollY;
         if (scrollPos > 5) {
+            logo = "black";
             bgColor = "#784390";
             textColor = "#fffcf7";
             hoverTextColor = "#ede6da";
         } else {
+            logo = "white";
             bgColor = "#fffcf7";
             textColor = "#784390";
             hoverTextColor = "#29104e";
@@ -67,7 +73,7 @@ export function selectNavBtn(pathname) {
 
     // remove current selected
     navBtns.forEach((element) => {
-        element.classList.remove(`${styles.selected}`);
+        element.classList.remove(`${navStyles.selected}`);
     });
 
     let el;
@@ -86,15 +92,29 @@ export function selectNavBtn(pathname) {
 
     }
 
-    el.classList.add(`${styles.selected}`);
+    el.classList.add(`${navStyles.selected}`);
 }
 
 // helper functions
 function transitionHeader() {
+    // change header background
     const headerEl = document.querySelector("header");
-    const navBtns = document.querySelectorAll("nav a");
-
     headerEl.style.backgroundColor = bgColor;
+
+    // change logo
+    const logos = document.querySelectorAll(".logo");
+    console.log(logos);
+    logos.forEach((element) => {  // remove the none class
+        element.classList.remove(`${headerStyles.none}`);
+    })
+
+    // hide opposite logo
+    const hiddenLogo = document.getElementById(`${logo}Logo`);
+    hiddenLogo.classList.add(`${headerStyles.none}`);
+
+
+    // change nav btns
+    const navBtns = document.querySelectorAll("nav a");
     navBtns.forEach((element) => {
         element.style.color = textColor;
     });

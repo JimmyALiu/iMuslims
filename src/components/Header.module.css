@@ -35,3 +35,7 @@
     position: fixed;
     aspect-ratio: auto;
 }
+
+.none {
+    display: none;
+}

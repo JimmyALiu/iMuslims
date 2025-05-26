@@ -57,7 +57,7 @@ export default function About() {
 
   return (
     <section>
-      <img src="/team-image.png" className={styles.teamPicture} />
+      <img src="/about-banner.png" className={styles.teamPicture} />
       <div className={styles.how}>
         <img className={styles.beganStar} src="./decorations/star.png" />
         <h1>How It All Began?</h1>

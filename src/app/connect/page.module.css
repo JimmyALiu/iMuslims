@@ -81,6 +81,20 @@
     color: #3D1E6B;
 }
 
+.partnerContent {
+    width: 80%;
+    min-width: 1024px;
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.partnerContent img {
+    height: 10em;
+}
 
 .eventsStarTopLeft {
     bottom: 35px;

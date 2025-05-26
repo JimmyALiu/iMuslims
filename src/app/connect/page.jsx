@@ -3,9 +3,12 @@ import React from 'react'
 import Link from 'next/link'
 
 export default function Connect() {
+    // will automatically look under /public/partners for src
     const partners = [
-        {src: "", alt: ""},
-        {src: "", alt: ""},
+        {src: "liberty-mutual.png", alt: "Liberty Mutual"},
+        {src: "microsoft.png", alt: "Microsoft"},
+        {src: "spacex.png", alt: "SpaceX"},
+        {src: "hiya.png", alt: "Hiya"},
     ]
 
     return (
@@ -30,11 +33,16 @@ export default function Connect() {
                 </div>
                 <div className={styles.container}>
                     <div className={styles.header}>
-                        
+                        <img src="/star.png" className={'star ' + styles.eventsStarTopLeft}></img>
                         <h1>Our Partners:</h1>
+                        <img src="/star.png" className={'star ' + styles.eventsStarTopRight}></img>
                     </div>
                     <div className={styles.partnerContent}>
-
+                        {partners.map((partner, i) => {
+                            return (
+                                <img key={i} src={`/partners/${partner.src}`} alt={partner.alt}></img>
+                            )
+                        })}
                     </div>
                 </div>
             </div>

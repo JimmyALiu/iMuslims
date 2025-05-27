@@ -1,6 +1,6 @@
 export default {
-    name: "photo",
-    title: "Photo",
+    name: "poster",
+    title: "Poster",
     type: "document",
     fields: [
         {
@@ -23,21 +23,6 @@ export default {
             options: {
                 hotspot: true,
             },
-        },
-        {
-            name: "role",
-            title: "Role",
-            type: "string",
-        },
-        {
-            name: "major",
-            title: "Major",
-            type: "string",
-        },
-        {
-            name: "year",
-            title: "Year",
-            type: "string",
-        },
+        }
     ],
-};
+}

@@ -1,6 +1,6 @@
 export default {
-    name: "photo",
-    title: "Photo",
+    name: "calendarEvent",
+    title: "Calendar Event",
     type: "document",
     fields: [
         {
@@ -16,28 +16,28 @@ export default {
             validation: (Rule) => Rule.required(),
         },
         {
-            name: "image",
-            title: "Image",
-            type: "image",
+            name: "description",
+            title: "Description",
+            type: "string",
             validation: (Rule) => Rule.required(),
-            options: {
-                hotspot: true,
-            },
         },
         {
-            name: "role",
-            title: "Role",
+            name: "date",
+            title: "Date",
             type: "string",
+            validation: (Rule) => Rule.required(),
         },
         {
-            name: "major",
-            title: "Major",
+            name: "time",
+            title: "Time",
             type: "string",
+            validation: (Rule) => Rule.required(),
         },
         {
-            name: "year",
-            title: "Year",
+            name: "location",
+            title: "Location",
             type: "string",
+            validation: (Rule) => Rule.required(),
         },
     ],
-};
+}

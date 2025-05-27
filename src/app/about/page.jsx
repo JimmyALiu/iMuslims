@@ -1,59 +1,15 @@
 import styles from "./page.module.css";
 import React from "react";
 import ProfileCard from "../../components/ProfileCard";
+import { client } from "@/sanity/lib/client";
+import imageUrlBuilder from '@sanity/image-url';
 
-export default function About() {
-  //object array for board members
-  const boardMembers = [
-    {
-      name: "Zareen Tasmin",
-      position: "Co-President",
-      major: "Informatics - Senior",
-      picture: "zareen.jpg",
-    },
-    {
-      name: "Safa Jamal",
-      position: "Co-President",
-      major: "Informatics - Senior",
-      picture: "safa.jpg",
-    },
-    {
-      name: "Razan Mansour",
-      position: "Director of Finance",
-      major: "Informatics - Senior",
-      picture: "razan.jpg",
-    },
-    {
-      name: "Heena Vahora",
-      position: "Director of Diversity Outreach",
-      major: "Informatics - Senior",
-      picture: "heena.jpg",
-    },
-    {
-      name: "Minnah Tazmeen",
-      position: "Creative Director",
-      major: "Informatics - Senior",
-      picture: "minnah.jpg",
-    },
-    {
-      name: "Zakiyah Farooque",
-      position: "Director of Organizational Affairs",
-      major: "Informatics - Senior",
-      picture: "zakiyah.jpg",
-    },
-    {
-      name: "Faiza Imran",
-      position: "Director of Professional Outreach",
-      major: "Informatics - Senior",
-      picture: "faiza.jpg",
-    },
-    {
-      name: "Sarah Ghamadsi",
-      position: "Director of PR",
-      major: "Informatics - Senior",
-      picture: "sarah.png",
-    },
-  ];
+// define url builder
+const builder = imageUrlBuilder(client);
+
+export default async function About() {
+  // await on sanity for pictures
+  const boardMembers = await getPictures();
 
   return (
     <section>
@@ -83,13 +39,32 @@ export default function About() {
             <ProfileCard
               key={index}
               name={member.name}
-              position={member.position}
+              position={member.role}
               major={member.major}
-              picture={member.picture}
+              year={member.year}
+              src={urlFor(member.image).url()}
             />
           );
         })}
       </div>
     </section>
   );
+}
+
+async function getPictures() {
+  const query = `*[_type == "photo"] | order(index asc) {
+    index,
+    name,
+    image,
+    role,
+    major,
+    year
+  }`
+
+  const posts = await client.fetch(query);
+  return posts;
+}
+
+function urlFor(src) {
+  return builder.image(src);
 }

@@ -1,55 +1,55 @@
 .eventsWrapper {
-    width: 100%;
+  width: 100%;
 }
 
 .eventsBanner {
-    /* center header with flex */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /* center header with flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .eventsBanner img {
-    /* note that the raw image contains a little white strip on the left side it's not the styling */
-    width: 101%;
+  /* note that the raw image contains a little white strip on the left side it's not the styling */
+  width: 101%;
 
-    /* overlay it with black */
-    filter: brightness(50%);
+  /* overlay it with black */
+  filter: brightness(50%);
 
-    /* hide cropping error on banner image */
-    margin-left:  -0.2%;
+  /* hide cropping error on banner image */
+  margin-left: -0.2%;
 }
 
 .eventsBanner h1 {
-    /* imported this font in the html file from google fonts */
-    font-family: 'Aboreto';
-    color: white;
-    width:  100%;
-    height: 1.4em;
-    font-weight: 1400;
+  /* imported this font in the html file from google fonts */
+  font-family: 'Aboreto';
+  color: white;
+  width: 100%;
+  height: 1.4em;
+  font-weight: 1400;
 
-    /* document will not allocate any space for the h1, will be relative to parent */
-    position: absolute;
-    margin-bottom:  38vh;
-    align-items: center;
-    text-align: center;
+  /* document will not allocate any space for the h1, will be relative to parent */
+  position: absolute;
+  margin-bottom: 38vh;
+  align-items: center;
+  text-align: center;
 }
 
-.purpleBackground{
+.purpleBackground {
   background: rgba(120, 67, 144, 0.75);
   height: 12vh;
   width: 100%;
   position: absolute;
-  margin-bottom:  35vh;
+  margin-bottom: 35vh;
   align-items: center;
 }
 
 
 .pageMinWidth {
-    min-width: 1024px;
+  min-width: 1024px;
 }
 
-.eventTitle h1{
+.eventTitle h1 {
   margin-left: 20vw;
   font-family: Aboreto;
   font-size: 48px;
@@ -63,7 +63,7 @@
   paint-order: stroke fill;
 }
 
-.pastEventTitle h1{
+.pastEventTitle h1 {
   margin-left: 20vw;
   font-family: Aboreto;
   font-size: 48px;
@@ -77,90 +77,39 @@
   paint-order: stroke fill;
 }
 
-.eventList {
-    font-family: 'Gotu';
-    font-weight: bold;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    margin-top: 3rem;
+.pastEvents {
+  min-width: 80%;
+  margin-left: 20vw;
+  overflow: auto;
+  white-space: nowrap;
+  margin-right: 20vw;
+  margin-bottom: 7vh;
 }
 
-.eventItem {
-    background: #FFFCF7;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    transition: all 0.3s ease-in-out;
+.pastEventImage {
+  height: 45vh;
+  padding: 2vmin;
 }
 
-.eventItem:hover {
-    transform: scale(1.01);
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .eventName {
-    color: #3D1E6B;
-    font-size: 1.5rem;
-    border-bottom: 1px solid #3D1E6B;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    padding-bottom: 1.5vh;
-    padding-left: 0.1vw;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .eventWrapper{
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
-
-  .eventDetails {
-    font-size: 1rem;
-    margin-top: 1vh;
-    margin-left: 0.1vw;
-    color: #464a4e;
-  }
-
-  .arrows img{
-    height: 1.5vh;
-    width: 1.5vw;
-  }
+.eventWrapper.show {
+  display: block;
+}
 
 
-  .pastEvents{
-    min-width: 80%;
-    margin-left: 20vw;
-    overflow: auto;
-    white-space: nowrap;
-    margin-right: 20vw;
-    margin-bottom: 7vh;
-  }
-  
-  .pastEventImage{
-    height: 45vh;
-    padding: 2vmin;
-  }
-  
-  .eventWrapper.show {
-    display: block;
-  }
-
-
-  .star{
-    position: relative;
-  }
+.star {
+  position: relative;
+}
 
 .starTopLeft {
-    bottom: 15px;
-    margin-left:  -60px;
+  bottom: 15px;
+  margin-left: -60px;
 }
 
 
-.eventsBanner, .purpleBackground,
-.eventTitle, .eventList,
+.eventsBanner,
+.purpleBackground,
+.eventTitle,
+.eventList,
 .pastEventTitle {
   min-width: 1024px;
 }
@@ -178,6 +127,7 @@ edit the ".scrollerContent" "animation" tag and edit it to be shorter time to be
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }

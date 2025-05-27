@@ -4,9 +4,16 @@ export default {
     type: "document",
     fields: [
         {
+            name: "index",
+            title: "Index",
+            type: "number",
+            validation: (Rule) => Rule.required(),
+        },
+        {
             name: "name",
             title: "Name",
             type: "string",
+            validation: (Rule) => Rule.required(),
         },
         {
             name: "image",

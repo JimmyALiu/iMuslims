@@ -25,14 +25,14 @@
 }
 
 .logoContainer a {
-   width: 100%;
+   width: 60%;
 }
 
 .logo {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     padding-left: 20px;
-    height: 20%;
-    max-height: 150px;
+    height: 12%;
+    max-height: 75px;
     position: fixed;
     aspect-ratio: auto;
 }

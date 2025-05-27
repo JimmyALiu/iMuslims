@@ -9,7 +9,7 @@ export default function Footer() {
     const pathname = usePathname();
     
     // ignore if sanity studio
-    if (pathname == '/studio') {
+    if (pathname.includes('/studio')) {
         return;
     }
 

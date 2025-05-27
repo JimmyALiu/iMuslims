@@ -11,58 +11,6 @@ export default async function About() {
   // await on sanity for pictures
   const boardMembers = await getPictures();
 
-  //object array for board members
-  // const boardMembers = [
-  //   {
-  //     name: "Zareen Tasmin",
-  //     position: "Co-President",
-  //     major: "Informatics - Senior",
-  //     picture: "zareen.jpg",
-  //   },
-  //   {
-  //     name: "Safa Jamal",
-  //     position: "Co-President",
-  //     major: "Informatics - Senior",
-  //     picture: "safa.jpg",
-  //   },
-  //   {
-  //     name: "Razan Mansour",
-  //     position: "Director of Finance",
-  //     major: "Informatics - Senior",
-  //     picture: "razan.jpg",
-  //   },
-  //   {
-  //     name: "Heena Vahora",
-  //     position: "Director of Diversity Outreach",
-  //     major: "Informatics - Senior",
-  //     picture: "heena.jpg",
-  //   },
-  //   {
-  //     name: "Minnah Tazmeen",
-  //     position: "Creative Director",
-  //     major: "Informatics - Senior",
-  //     picture: "minnah.jpg",
-  //   },
-  //   {
-  //     name: "Zakiyah Farooque",
-  //     position: "Director of Organizational Affairs",
-  //     major: "Informatics - Senior",
-  //     picture: "zakiyah.jpg",
-  //   },
-  //   {
-  //     name: "Faiza Imran",
-  //     position: "Director of Professional Outreach",
-  //     major: "Informatics - Senior",
-  //     picture: "faiza.jpg",
-  //   },
-  //   {
-  //     name: "Sarah Ghamadsi",
-  //     position: "Director of PR",
-  //     major: "Informatics - Senior",
-  //     picture: "sarah.png",
-  //   },
-  // ];
-
   return (
     <section>
       <img src="/about-banner.png" className={styles.teamPicture} />

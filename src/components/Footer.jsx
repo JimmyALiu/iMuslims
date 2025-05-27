@@ -37,7 +37,7 @@ export default function Footer() {
                         <Link href="/events"><p>Upcoming Events</p></Link>
                         <Link href="/events"><p>Past Events</p></Link>
                         <Link href="/about"><p>Our Board</p></Link>
-                        <Link href="/connect"><p>Membership Form</p></Link>
+                        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdkvk3rhyuLiNZaOcl3-RcKfBfSGm5n1rK1O29jJkYBXZcLAw/viewform" target='_blank'><p>Membership Form</p></Link>
                     </div>
                 </div>
 

@@ -2,17 +2,19 @@ import styles from './page.module.css';
 import React from 'react'
 import Link from 'next/link'
 import CalendarEvent from '../../components/CalendarEvent';
+import { client } from "@/sanity/lib/client";
 
-export default function Home() {
+export default async function Home() {
     // these will be rendered into calendar events
     // edit or add to this array to change the events
-    const events = [
-        { eventName: "Event Name", description: "~Description~", date: "1/19/25", time: "3:00am", location: "CSE2 303" },
-        { eventName: "Event 2", description: "A short description", date: "really long date", time: "6:00pm", location: "ECE 101" },
-        { eventName: "Event 3", description: "A long long long long long long long long long long long long long description with scrollbar", date: "5/19/25", time: "7:30pm", location: "SAV 123" },
-        { eventName: "Event 4", description: "A short description for an overflow event", date: "6/19/25", time: "4:30pm", location: "KNE 130" },
-        { eventName: "A Long Event Name", description: "A long long long long long long long long long long long long long description with scrollbar", date: "5/19/25", time: "7:30pm", location: "SAV 123" },
-    ]
+    const events = await getEvents();
+    // const events = [
+    //     { eventName: "Event Name", description: "~Description~", date: "1/19/25", time: "3:00am", location: "CSE2 303" },
+    //     { eventName: "Event 2", description: "A short description", date: "really long date", time: "6:00pm", location: "ECE 101" },
+    //     { eventName: "Event 3", description: "A long long long long long long long long long long long long long description with scrollbar", date: "5/19/25", time: "7:30pm", location: "SAV 123" },
+    //     { eventName: "Event 4", description: "A short description for an overflow event", date: "6/19/25", time: "4:30pm", location: "KNE 130" },
+    //     { eventName: "A Long Event Name", description: "A long long long long long long long long long long long long long description with scrollbar", date: "5/19/25", time: "7:30pm", location: "SAV 123" },
+    // ]
 
     return (
         <section className={styles.home}>
@@ -49,7 +51,7 @@ export default function Home() {
                         {events.map((obj, i) => {
                             return <CalendarEvent
                                 key={i}
-                                eventName={obj.eventName}
+                                eventName={obj.name}
                                 description={obj.description}
                                 date={obj.date}
                                 time={obj.time}
@@ -61,4 +63,18 @@ export default function Home() {
             </div>
         </section>
     )
+}
+
+async function getEvents() {
+  const query = `*[_type == "calendarEvent"] | order(index asc) {
+    index,
+    name,
+    description,
+    date,
+    time,
+    location
+  }`
+
+  const posts = await client.fetch(query);
+  return posts;
 }

@@ -112,7 +112,9 @@
   }
 
   .eventWrapper{
-    display:none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
   }
 
   .eventDetails {
@@ -139,7 +141,6 @@
   
   .pastEventImage{
     height: 45vh;
-
     padding: 2vmin;
   }
   
@@ -165,5 +166,30 @@
 }
 
 .pastEvents {
+  animation-name: infiniteScroll;
   min-width: 800px;
+}
+
+
+/* note that the reset range is set to 50%, you can tweak it up to 100%. It in part determines how 
+fast the scroll speed it because it tells it how far to scroll to the left. You can also choose to 
+edit the ".scrollerContent" "animation" tag and edit it to be shorter time to be faster. */
+@keyframes infiniteScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.scrollerWrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.scrollerContent {
+  display: flex;
+  width: max-content;
+  animation: infiniteScroll 20s linear infinite;
 }

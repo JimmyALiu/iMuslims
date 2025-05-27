@@ -1,8 +1,17 @@
 "use client";
 import styles from './page.module.css';
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 
-export default function Events() {
+import { client } from "@/sanity/lib/client";
+import imageUrlBuilder from '@sanity/image-url';
+
+// define url builder
+const builder = imageUrlBuilder(client);
+
+export default async function Events() {
+  // await on sanity for posters
+  const posters = await getPosters();
+
   const [activeIndex, setActiveIndex] = useState(null);
   const panelRefs = useRef([]);
 
@@ -110,11 +119,11 @@ export default function Events() {
       <div className={styles.pastEvents}>
         <div className ={styles.scrollerWrapper}>
           <div className={styles.scrollerContent}>
-        {pastEvents.map((item, index) => (
+        {posters.map((item, index) => (
            <img
             className={styles.pastEventImage}
-            src={item.imageUrl}
-            alt={`Past Event image ${index + 1}`}
+            src={urlFor(item.image).url()}
+            alt={item.name}
             key={index}
           />
         ))}
@@ -123,4 +132,20 @@ export default function Events() {
       </div>
     </div>
   );
+}
+
+
+async function getPosters() {
+  const query = `*[_type == "poster"] | order(index asc) {
+    index,
+    name,
+    image,
+  }`
+
+  const posts = await client.fetch(query);
+  return posts;
+}
+
+function urlFor(src) {
+  return builder.image(src);
 }

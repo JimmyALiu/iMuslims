@@ -13,6 +13,12 @@ import { headerChangeOnScroll, navBtnChangeOnHover, selectNavBtn } from '../scri
 
 export default function Header() {
     const pathname = usePathname();
+
+    // ignore if sanity studio
+    if (pathname == '/studio') {
+        return;
+    }
+
     useEffect(() => {
         selectNavBtn(pathname);
     }, [pathname]);

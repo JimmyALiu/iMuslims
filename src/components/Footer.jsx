@@ -1,8 +1,18 @@
+"use client";
+
 import styles from './Footer.module.css'
 import React from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 export default function Footer() {
+    const pathname = usePathname();
+    
+    // ignore if sanity studio
+    if (pathname == '/studio') {
+        return;
+    }
+
     return (
         <footer className={styles.footer}>
             <div className={styles.footerInfo}>

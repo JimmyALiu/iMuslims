@@ -23,7 +23,7 @@ export default function Connect() {
                 <div className={styles.container}>
                     <div className={styles.header}>
                         <img src="/decorations/star.png" className={'star ' + styles.eventsStarTopLeft}></img>
-                        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdkvk3rhyuLiNZaOcl3-RcKfBfSGm5n1rK1O29jJkYBXZcLAw/viewform"><h1>Become a Member?</h1></Link>
+                        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdkvk3rhyuLiNZaOcl3-RcKfBfSGm5n1rK1O29jJkYBXZcLAw/viewform" target="_blank"><h1>Become a Member?</h1></Link>
                         <img src="/decorations/star.png" className={'star ' + styles.eventsStarTopRight}></img>
                         <img src="/decorations/link-arrow.png" className={styles.linkArrow}></img>
                     </div>

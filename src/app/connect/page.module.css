@@ -65,8 +65,8 @@
     text-decoration-color: #6f4faa;
 }
 
-.header h1:hover {
-    text-shadow: 0px 0px 100px #9270cf;
+.highlight:hover {
+    text-shadow: 0px 0px 100px #7553b4;
     transition-duration: 250ms;
     transition-delay: 20ms;
 }

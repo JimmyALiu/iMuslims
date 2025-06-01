@@ -22,6 +22,12 @@ export default {
             validation: (Rule) => Rule.required(),
         },
         {
+            name: "long_description",
+            title: "Long Description",
+            type: "string",
+            validation: (Rule) => Rule.required(),
+        },
+        {
             name: "date",
             title: "Date",
             type: "string",

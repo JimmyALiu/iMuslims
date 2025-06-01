@@ -1,6 +1,5 @@
 import styles from './page.module.css';
 import EventsDropdown from '@/components/EventsDropdown';
-
 import { client } from "@/sanity/lib/client";
 import imageUrlBuilder from '@sanity/image-url';
 
@@ -9,8 +8,10 @@ const builder = imageUrlBuilder(client);
 
 export default async function Events() {
   // await on sanity for posters
+  let events = await getEvents();
   let posters = await getPosters();
   posters = posters.concat(posters);  // duplicate for smoother scroll
+
 
   return (
     <div className={styles.eventsWrapper.pageMinWidth}>
@@ -31,7 +32,7 @@ export default async function Events() {
         </h1>
       </div>
 
-      <EventsDropdown />
+      <EventsDropdown events={events} />
 
       <div className={styles.pastEventTitle}>
         <h1>
@@ -61,6 +62,17 @@ export default async function Events() {
   );
 }
 
+
+async function getEvents() {
+  const query = `*[_type == "event"] | order(index asc) {
+    index,
+    name,
+    long_description,
+  }`
+
+  const posts = await client.fetch(query);
+  return posts;
+}
 
 async function getPosters() {
   const query = `*[_type == "poster"] | order(index asc) {

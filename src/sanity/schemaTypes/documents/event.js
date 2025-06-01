@@ -1,6 +1,6 @@
 export default {
-    name: "calendarEvent",
-    title: "Calendar Event",
+    name: "event",
+    title: "Event",
     type: "document",
     fields: [
         {

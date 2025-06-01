@@ -1,6 +1,6 @@
 export default {
-    name: "calendarEvent",
-    title: "Calendar Event",
+    name: "event",
+    title: "Event",
     type: "document",
     fields: [
         {
@@ -18,6 +18,12 @@ export default {
         {
             name: "description",
             title: "Description",
+            type: "string",
+            validation: (Rule) => Rule.required(),
+        },
+        {
+            name: "long_description",
+            title: "Long Description",
             type: "string",
             validation: (Rule) => Rule.required(),
         },

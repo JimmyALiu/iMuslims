@@ -15,10 +15,11 @@ export default async function Events() {
 
   return (
     <div className={styles.eventsWrapper.pageMinWidth}>
-      <div className={styles.eventsBanner}>
+      <div className={styles.bannerContainer}>
         <img src="/events_banner.png" alt="Events Banner"/>
-        <div className={styles.purpleBackground}></div>
-        <h1 className={styles.pageMinWidth}>Join Us At Our Next Event?</h1>
+        <div className={styles.bannerHeader}>
+          <h1>Join Us At Our Next Event?</h1>
+        </div>
       </div>
 
       <div className={styles.eventTitle}>
